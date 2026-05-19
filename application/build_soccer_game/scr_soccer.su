@@ -1,0 +1,23 @@
+sources/app/screens/scr_soccer.cpp:17:6:void stop_super_mode_led_blink()	0	static
+sources/app/screens/scr_soccer.cpp:44:6:void stop_soccer_timers()	8	static
+sources/app/screens/scr_soccer.cpp:53:5:int clamp_int(int, int, int)	0	static
+sources/app/screens/scr_soccer.cpp:68:6:bool accept_soccer_input()	8	static
+sources/app/screens/scr_soccer.cpp:82:6:void sync_ball_display_position()	0	static
+sources/app/screens/scr_soccer.cpp:89:6:void set_ball_position(int, int)	0	static
+sources/app/screens/scr_soccer.cpp:97:6:void set_striker_position(int)	0	static
+sources/app/screens/scr_soccer.cpp:104:6:void align_ball_with_striker()	0	static
+sources/app/screens/scr_soccer.cpp:110:6:void move_shooter_position(int)	8	static
+sources/app/screens/scr_soccer.cpp:117:6:void reset_ball()	16	static
+sources/app/screens/scr_soccer.cpp:148:6:void schedule_countdown_tick()	0	static
+sources/app/screens/scr_soccer.cpp:221:6:void clamp_keeper_position()	0	static
+sources/app/screens/scr_soccer.cpp:227:6:void clamp_ball_position()	0	static
+sources/app/screens/scr_soccer.cpp:236:6:bool keeper_covers_ball()	0	static
+sources/app/screens/scr_soccer.cpp:385:6:void view_scr_soccer()	48	static
+sources/app/screens/scr_soccer.cpp:154:6:void begin_gameplay()	8	static
+sources/app/screens/scr_soccer.cpp:171:6:void begin_countdown()	8	static
+sources/app/screens/scr_soccer.cpp:181:6:void begin_result(soccer_result_t)	8	static
+sources/app/screens/scr_soccer.cpp:191:6:void restart_game()	8	static
+sources/app/screens/scr_soccer.cpp:214:6:void toggle_selection()	0	static
+sources/app/screens/scr_soccer.cpp:252:6:bool activate_super_mode()	8	static
+sources/app/screens/scr_soccer.cpp:267:6:void finish_super_mode()	8	static
+sources/app/screens/scr_soccer.cpp:439:6:void scr_soccer_handle(ak_msg_t*)	16	static

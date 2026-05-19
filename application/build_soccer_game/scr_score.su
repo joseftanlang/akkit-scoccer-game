@@ -1,0 +1,2 @@
+sources/app/screens/scr_score.cpp:23:6:void view_scr_score()	32	static
+sources/app/screens/scr_score.cpp:42:6:void scr_score_handle(ak_msg_t*)	8	static
