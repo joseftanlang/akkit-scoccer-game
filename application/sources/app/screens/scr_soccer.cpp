@@ -9,9 +9,9 @@
 /* Shared game state is declared in header; define it here for the module */
 soccer_game_t game_state;
 static uint32_t last_soccer_input_ms = 0;
-static bool is_drawing = false;  /* Rendering lock to prevent nested view updates */
+static bool is_drawing = false;     /* Rendering lock to prevent nested view updates */
 static uint32_t last_render_ms = 0; /* Throttle rendering to ~50ms (20 FPS) */
-#define RENDER_INTERVAL_MS (50)  /* Min time between full renders */
+#define RENDER_INTERVAL_MS (50)     /* Min time between full renders */
 
 // This function stops the super mode LED blink
 void stop_super_mode_led_blink()
@@ -385,13 +385,13 @@ static void view_scr_result()
 void view_scr_soccer()
 {
     if (is_drawing)
-        return;        // If we are already drawing, ignore this request
+        return; // If we are already drawing, ignore this request
 
     /* Throttle rendering to avoid excessive display updates */
     const uint32_t current_time_ms = sys_ctrl_millis();
     if (last_render_ms != 0 && (current_time_ms - last_render_ms) < RENDER_INTERVAL_MS)
     {
-        return;  /* Not enough time has passed; skip render */
+        return; /* Not enough time has passed; skip render */
     }
 
     is_drawing = true; // Lock
@@ -437,7 +437,9 @@ view_screen_t scr_soccer = {
 
 // message handler function for the soccer screen, handles all the game logic and state updates based on incoming messages/events
 void scr_soccer_handle(ak_msg_t *msg)
-{    SCREEN_NONE_UPDATE_MASK();    switch (msg->sig)
+{
+    SCREEN_NONE_UPDATE_MASK();
+    switch (msg->sig)
     {
 
     case SCREEN_ENTRY:
@@ -459,7 +461,7 @@ void scr_soccer_handle(ak_msg_t *msg)
         {
             if (game_state.countdown_seconds <= 1)
             {
-                begin_gameplay();   
+                begin_gameplay();
             }
             else
             {
@@ -600,9 +602,47 @@ void scr_soccer_handle(ak_msg_t *msg)
     break;
 
     case AC_DISPLAY_BUTON_LONG_MODE_PRESSED:
+    {
+        APP_DBG_SIG("AC_DISPLAY_BUTON_LONG_MODE_PRESSED\n");
+        if (game_state.phase == SOCCER_PHASE_PLAYING && game_state.role == SOCCER_ROLE_SHOOTER && game_state.ball_vy_fp == 0)
+        {
+            game_state.ball_speed_boost_pending = true;
+            BUZZER_PlaySound(BUZZER_SOUND_3BEEP);
+        }
+    }
+    break;
+
     case AC_DISPLAY_BUTON_LONG_UP_RELEASED:
     case AC_DISPLAY_BUTON_LONG_DOWN_RELEASED:
         break;
+
+    case AC_DISPLAY_BUTON_MODE_n_UP_RELEASED:
+    {
+        APP_DBG("AC_DISPLAY_BUTON_MODE_n_UP_RELEASED");
+        if (!accept_soccer_input())
+            break;
+        if (game_state.phase == SOCCER_PHASE_PLAYING && game_state.role == SOCCER_ROLE_SHOOTER && game_state.ball_vy_fp == 0)
+        {
+            ar_striker_shoot_ball();
+            game_state.ball_vx_fp = BALL_GOALKEEPER_SPEED_X;
+            BUZZER_PlaySound(BUZZER_SOUND_3BEEP);
+        }
+    }
+    break;
+
+    case AC_DISPLAY_BUTON_MODE_n_DOWN_RELEASED:
+    {
+        APP_DBG("AC_DISPLAY_BUTON_MODE_n_DOWN_RELEASED");
+        if (!accept_soccer_input())
+            break;
+        if (game_state.phase == SOCCER_PHASE_PLAYING && game_state.role == SOCCER_ROLE_SHOOTER && game_state.ball_vy_fp == 0)
+        {
+            ar_striker_shoot_ball();
+            game_state.ball_vx_fp = -BALL_GOALKEEPER_SPEED_X;
+            BUZZER_PlaySound(BUZZER_SOUND_3BEEP);
+        }
+    }
+    break;
 
     default:
         break;

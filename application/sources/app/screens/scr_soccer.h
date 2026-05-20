@@ -51,6 +51,7 @@
 #define BALL_Y (58)
 #define BALL_RADIUS (3)
 #define BALL_SHOOT_SPEED_Y (-15)
+#define BALL_SHOOT_SPEED_Y_FAST (-20)
 #define BALL_GOALKEEPER_SPEED_Y (-10)
 #define BALL_GOALKEEPER_SPEED_X (6)
 
@@ -106,6 +107,7 @@ typedef struct soccer_game_t {
 	int ball_x;
 	int ball_y;
 	bool super_mode_active;
+	bool ball_speed_boost_pending;
 	int super_mode_led_toggle_remaining;
 } soccer_game_t;
 

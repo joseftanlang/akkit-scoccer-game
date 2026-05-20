@@ -1,4 +1,5 @@
 #include "view_render.h"
+#include "app_dbg.h"
 Adafruit_oled_drv view_render;
 
 static int view_render_rectangle(void* rectangle);
@@ -84,6 +85,7 @@ int view_render_dynamic(void* dynamic) {
 }
 
 int view_render_screen(view_screen_t* screen) {
+	APP_DBG("\nVIEW_RENDER", "Render screen with focus item: %d\n", screen->focus_item);
 	view_render.clear();
 
 	if ((view_item_t*)screen->item[screen->focus_item] != ITEM_NULL) {

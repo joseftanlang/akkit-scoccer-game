@@ -486,7 +486,7 @@ void scr_soccer_handle(ak_msg_t *msg)
     // Soccer timer result tick, transitions back to selection screen after showing result for a few seconds
     case AC_DISPLAY_SHOW_SOCCER_RESULT:
     {
-		SCREEN_TRAN(scr_menu_handle, &scr_menu);
+        SCREEN_TRAN(scr_menu_handle, &scr_menu);
     }
     break;
 
@@ -586,7 +586,7 @@ void scr_soccer_handle(ak_msg_t *msg)
         }
         else
         {
-			SCREEN_TRAN(scr_menu_handle, &scr_menu);
+            SCREEN_TRAN(scr_menu_handle, &scr_menu);
             handled = true;
         }
 
@@ -597,10 +597,51 @@ void scr_soccer_handle(ak_msg_t *msg)
         }
     }
     break;
-
     case AC_DISPLAY_BUTON_LONG_MODE_PRESSED:
-        SCREEN_TRAN(scr_menu_handle, &scr_menu);
-        break;
+    {
+        if (game_state.phase == SOCCER_PHASE_PLAYING && game_state.role == SOCCER_ROLE_SHOOTER && game_state.ball_vy_fp == 0)
+        {
+            game_state.ball_speed_boost_pending = true;
+            BUZZER_PlaySound(BUZZER_SOUND_3BEEP);
+            mark_render_needed();
+        }
+        else
+        {
+            SCREEN_TRAN(scr_menu_handle, &scr_menu);
+        }
+    }
+    break;
+
+    case AC_DISPLAY_BUTON_MODE_n_UP_RELEASED:
+    {
+        APP_DBG("AC_DISPLAY_BUTON_MODE_n_UP_RELEASED");
+        if (!accept_soccer_input())
+            break;
+        if (game_state.phase == SOCCER_PHASE_PLAYING && game_state.role == SOCCER_ROLE_SHOOTER && game_state.ball_vy_fp == 0)
+        {
+            ar_striker_shoot_ball();
+            game_state.ball_vx_fp = BALL_GOALKEEPER_SPEED_X;
+            BUZZER_PlaySound(BUZZER_SOUND_3BEEP);
+            mark_render_needed();
+        }
+    }
+    break;
+
+    case AC_DISPLAY_BUTON_MODE_n_DOWN_RELEASED:
+    {
+        APP_DBG("AC_DISPLAY_BUTON_MODE_n_DOWN_RELEASED");
+        if (!accept_soccer_input())
+            break;
+        if (game_state.phase == SOCCER_PHASE_PLAYING && game_state.role == SOCCER_ROLE_SHOOTER && game_state.ball_vy_fp == 0)
+        {
+            ar_striker_shoot_ball();
+            game_state.ball_vx_fp = -BALL_GOALKEEPER_SPEED_X;
+            BUZZER_PlaySound(BUZZER_SOUND_3BEEP);
+            mark_render_needed();
+        }
+    }
+    break;
+
     case AC_DISPLAY_BUTON_LONG_UP_RELEASED:
     case AC_DISPLAY_BUTON_LONG_DOWN_RELEASED:
         break;

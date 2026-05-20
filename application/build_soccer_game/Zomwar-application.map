@@ -3035,7 +3035,7 @@ Linker script and memory map
                 0x0000000008003000                isr_vector
                 0x00000000080030f4                . = ALIGN (0x4)
 
-.text           0x00000000080030f8     0xf4dc
+.text           0x00000000080030f8     0xf638
                 0x00000000080030f8                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080030f8       0xec /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memcpy.o)
@@ -3961,933 +3961,935 @@ Linker script and memory map
  .text._ZL16view_scr_startupv
                 0x0000000008009240       0x5c build_soccer_game/scr_startup.o
  .text._Z18scr_startup_handleP8ak_msg_t
-                0x000000000800929c       0x94 build_soccer_game/scr_startup.o
+                0x000000000800929c       0x98 build_soccer_game/scr_startup.o
                 0x000000000800929c                scr_startup_handle(ak_msg_t*)
  .text._ZL15draw_option_boxiiiiPKcb.constprop.0
-                0x0000000008009330       0x5c build_soccer_game/scr_menu.o
+                0x0000000008009334       0x5c build_soccer_game/scr_menu.o
  .text._ZL13view_scr_menuv
-                0x000000000800938c       0xa0 build_soccer_game/scr_menu.o
+                0x0000000008009390       0xa0 build_soccer_game/scr_menu.o
  .text._Z15scr_menu_handleP8ak_msg_t
-                0x000000000800942c       0x9c build_soccer_game/scr_menu.o
-                0x000000000800942c                scr_menu_handle(ak_msg_t*)
+                0x0000000008009430       0xa0 build_soccer_game/scr_menu.o
+                0x0000000008009430                scr_menu_handle(ak_msg_t*)
  .text._ZL14view_scr_scorev
-                0x00000000080094c8       0x90 build_soccer_game/scr_score.o
+                0x00000000080094d0       0x90 build_soccer_game/scr_score.o
  .text._Z16scr_score_handleP8ak_msg_t
-                0x0000000008009558       0x88 build_soccer_game/scr_score.o
-                0x0000000008009558                scr_score_handle(ak_msg_t*)
+                0x0000000008009560       0x70 build_soccer_game/scr_score.o
+                0x0000000008009560                scr_score_handle(ak_msg_t*)
  .text._Z11task_systemP8ak_msg_t
-                0x00000000080095e0       0x44 build_soccer_game/task_system.o
-                0x00000000080095e0                task_system(ak_msg_t*)
+                0x00000000080095d0       0x44 build_soccer_game/task_system.o
+                0x00000000080095d0                task_system(ak_msg_t*)
  .text.main_app
-                0x0000000008009624      0x2a8 build_soccer_game/app.o
-                0x0000000008009624                main_app
+                0x0000000008009614      0x2a8 build_soccer_game/app.o
+                0x0000000008009614                main_app
  .text._Z19task_polling_zigbeev
-                0x00000000080098cc        0x2 build_soccer_game/app.o
-                0x00000000080098cc                task_polling_zigbee()
- *fill*         0x00000000080098ce        0x2 
+                0x00000000080098bc        0x2 build_soccer_game/app.o
+                0x00000000080098bc                task_polling_zigbee()
+ *fill*         0x00000000080098be        0x2 
  .text._Z20task_polling_consolev
-                0x00000000080098d0       0xd8 build_soccer_game/app.o
-                0x00000000080098d0                task_polling_console()
+                0x00000000080098c0       0xd8 build_soccer_game/app.o
+                0x00000000080098c0                task_polling_console()
  .text.sys_irq_timer_10ms
-                0x00000000080099a8       0x24 build_soccer_game/app.o
-                0x00000000080099a8                sys_irq_timer_10ms
+                0x0000000008009998       0x24 build_soccer_game/app.o
+                0x0000000008009998                sys_irq_timer_10ms
  .text.ar_game_score_read
-                0x00000000080099cc       0x54 build_soccer_game/app_eeprom.o
-                0x00000000080099cc                ar_game_score_read
+                0x00000000080099bc       0x54 build_soccer_game/app_eeprom.o
+                0x00000000080099bc                ar_game_score_read
  .text.ar_game_score_write
-                0x0000000008009a20       0x40 build_soccer_game/app_eeprom.o
-                0x0000000008009a20                ar_game_score_write
+                0x0000000008009a10       0x40 build_soccer_game/app_eeprom.o
+                0x0000000008009a10                ar_game_score_write
  .text._Z27ar_game_setting_set_defaultP17ar_game_setting_t
-                0x0000000008009a60       0x12 build_soccer_game/app_eeprom.o
-                0x0000000008009a60                ar_game_setting_set_default(ar_game_setting_t*)
- *fill*         0x0000000008009a72        0x2 
+                0x0000000008009a50       0x12 build_soccer_game/app_eeprom.o
+                0x0000000008009a50                ar_game_setting_set_default(ar_game_setting_t*)
+ *fill*         0x0000000008009a62        0x2 
  .text.ar_game_setting_read
-                0x0000000008009a74       0x54 build_soccer_game/app_eeprom.o
-                0x0000000008009a74                ar_game_setting_read
+                0x0000000008009a64       0x54 build_soccer_game/app_eeprom.o
+                0x0000000008009a64                ar_game_setting_read
  .text._Z17btn_mode_callbackPv
-                0x0000000008009ac8       0x44 build_soccer_game/app_bsp.o
-                0x0000000008009ac8                btn_mode_callback(void*)
+                0x0000000008009ab8       0x58 build_soccer_game/app_bsp.o
+                0x0000000008009ab8                btn_mode_callback(void*)
  .text._Z15btn_up_callbackPv
-                0x0000000008009b0c       0x44 build_soccer_game/app_bsp.o
-                0x0000000008009b0c                btn_up_callback(void*)
+                0x0000000008009b10       0x50 build_soccer_game/app_bsp.o
+                0x0000000008009b10                btn_up_callback(void*)
  .text._Z17btn_down_callbackPv
-                0x0000000008009b50       0x44 build_soccer_game/app_bsp.o
-                0x0000000008009b50                btn_down_callback(void*)
+                0x0000000008009b60       0x50 build_soccer_game/app_bsp.o
+                0x0000000008009b60                btn_down_callback(void*)
  .text._Z22updateDataModbusDeviceP21ModbusDeviceStructure
-                0x0000000008009b94       0xc4 build_soccer_game/app_modbus_pull.o
-                0x0000000008009b94                updateDataModbusDevice(ModbusDeviceStructure*)
+                0x0000000008009bb0       0xc4 build_soccer_game/app_modbus_pull.o
+                0x0000000008009bb0                updateDataModbusDevice(ModbusDeviceStructure*)
  .text._ZL19str_parser_get_attrh
-                0x0000000008009c58       0x1c build_soccer_game/shell.o
+                0x0000000008009c74       0x1c build_soccer_game/shell.o
  .text._Z9shell_sttPh
-                0x0000000008009c74        0x4 build_soccer_game/shell.o
-                0x0000000008009c74                shell_stt(unsigned char*)
+                0x0000000008009c90        0x4 build_soccer_game/shell.o
+                0x0000000008009c90                shell_stt(unsigned char*)
  .text._Z9shell_psvPh
-                0x0000000008009c78       0x14 build_soccer_game/shell.o
-                0x0000000008009c78                shell_psv(unsigned char*)
+                0x0000000008009c94       0x14 build_soccer_game/shell.o
+                0x0000000008009c94                shell_psv(unsigned char*)
  .text._Z11shell_resetPh
-                0x0000000008009c8c       0x10 build_soccer_game/shell.o
-                0x0000000008009c8c                shell_reset(unsigned char*)
+                0x0000000008009ca8       0x10 build_soccer_game/shell.o
+                0x0000000008009ca8                shell_reset(unsigned char*)
  .text._Z10shell_helpPh
-                0x0000000008009c9c       0x30 build_soccer_game/shell.o
-                0x0000000008009c9c                shell_help(unsigned char*)
+                0x0000000008009cb8       0x30 build_soccer_game/shell.o
+                0x0000000008009cb8                shell_help(unsigned char*)
  .text._Z9shell_verPh
-                0x0000000008009ccc      0x118 build_soccer_game/shell.o
-                0x0000000008009ccc                shell_ver(unsigned char*)
+                0x0000000008009ce8      0x118 build_soccer_game/shell.o
+                0x0000000008009ce8                shell_ver(unsigned char*)
  .text._Z12shell_rebootPh
-                0x0000000008009de4       0x10 build_soccer_game/shell.o
-                0x0000000008009de4                shell_reboot(unsigned char*)
+                0x0000000008009e00       0x10 build_soccer_game/shell.o
+                0x0000000008009e00                shell_reboot(unsigned char*)
  .text._ZL10str_parserPc
-                0x0000000008009df4       0x60 build_soccer_game/shell.o
+                0x0000000008009e10       0x60 build_soccer_game/shell.o
  .text._Z11shell_flashPh
-                0x0000000008009e54      0x150 build_soccer_game/shell.o
-                0x0000000008009e54                shell_flash(unsigned char*)
+                0x0000000008009e70      0x150 build_soccer_game/shell.o
+                0x0000000008009e70                shell_flash(unsigned char*)
  .text._ZL26shell_lcd_dump_framebufferv
-                0x0000000008009fa4       0x8c build_soccer_game/shell.o
+                0x0000000008009fc0       0x8c build_soccer_game/shell.o
  .text._Z11shell_fatalPh
-                0x000000000800a030      0x360 build_soccer_game/shell.o
-                0x000000000800a030                shell_fatal(unsigned char*)
+                0x000000000800a04c      0x360 build_soccer_game/shell.o
+                0x000000000800a04c                shell_fatal(unsigned char*)
  .text._Z9shell_epsPh
-                0x000000000800a390       0xd0 build_soccer_game/shell.o
-                0x000000000800a390                shell_eps(unsigned char*)
+                0x000000000800a3ac       0xd0 build_soccer_game/shell.o
+                0x000000000800a3ac                shell_eps(unsigned char*)
  .text._Z9shell_ramPh
-                0x000000000800a460      0x20c build_soccer_game/shell.o
-                0x000000000800a460                shell_ram(unsigned char*)
+                0x000000000800a47c      0x20c build_soccer_game/shell.o
+                0x000000000800a47c                shell_ram(unsigned char*)
  .text._Z10shell_bootPh
-                0x000000000800a66c       0xdc build_soccer_game/shell.o
-                0x000000000800a66c                shell_boot(unsigned char*)
+                0x000000000800a688       0xdc build_soccer_game/shell.o
+                0x000000000800a688                shell_boot(unsigned char*)
  .text._Z9shell_fwuPh
-                0x000000000800a748       0x34 build_soccer_game/shell.o
-                0x000000000800a748                shell_fwu(unsigned char*)
+                0x000000000800a764       0x34 build_soccer_game/shell.o
+                0x000000000800a764                shell_fwu(unsigned char*)
  .text._Z12shell_buzzerPh
-                0x000000000800a77c       0x88 build_soccer_game/shell.o
-                0x000000000800a77c                shell_buzzer(unsigned char*)
+                0x000000000800a798       0x88 build_soccer_game/shell.o
+                0x000000000800a798                shell_buzzer(unsigned char*)
  .text._Z9shell_dbgPh
-                0x000000000800a804       0x38 build_soccer_game/shell.o
-                0x000000000800a804                shell_dbg(unsigned char*)
+                0x000000000800a820       0x38 build_soccer_game/shell.o
+                0x000000000800a820                shell_dbg(unsigned char*)
  .text._Z12shell_modbusPh
-                0x000000000800a83c       0xe0 build_soccer_game/shell.o
-                0x000000000800a83c                shell_modbus(unsigned char*)
+                0x000000000800a858       0xe0 build_soccer_game/shell.o
+                0x000000000800a858                shell_modbus(unsigned char*)
  .text._Z9shell_epiPh
-                0x000000000800a91c        0x4 build_soccer_game/shell.o
-                0x000000000800a91c                shell_epi(unsigned char*)
+                0x000000000800a938        0x4 build_soccer_game/shell.o
+                0x000000000800a938                shell_epi(unsigned char*)
  .text._Z9shell_lcdPh
-                0x000000000800a920      0x1d4 build_soccer_game/shell.o
-                0x000000000800a920                shell_lcd(unsigned char*)
+                0x000000000800a93c      0x1d4 build_soccer_game/shell.o
+                0x000000000800a93c                shell_lcd(unsigned char*)
  .text.sys_irq_shell
-                0x000000000800aaf4       0x2c build_soccer_game/task_shell.o
-                0x000000000800aaf4                sys_irq_shell
+                0x000000000800ab10       0x2c build_soccer_game/task_shell.o
+                0x000000000800ab10                sys_irq_shell
  .text._Z10task_shellP8ak_msg_t
-                0x000000000800ab20       0x7c build_soccer_game/task_shell.o
-                0x000000000800ab20                task_shell(ak_msg_t*)
+                0x000000000800ab3c       0x7c build_soccer_game/task_shell.o
+                0x000000000800ab3c                task_shell(ak_msg_t*)
  .text._Z9task_lifeP8ak_msg_t
-                0x000000000800ab9c       0x20 build_soccer_game/task_life.o
-                0x000000000800ab9c                task_life(ak_msg_t*)
+                0x000000000800abb8       0x20 build_soccer_game/task_life.o
+                0x000000000800abb8                task_life(ak_msg_t*)
  .text._Z7task_fwP8ak_msg_t
-                0x000000000800abbc      0x490 build_soccer_game/task_fw.o
-                0x000000000800abbc                task_fw(ak_msg_t*)
+                0x000000000800abd8      0x490 build_soccer_game/task_fw.o
+                0x000000000800abd8                task_fw(ak_msg_t*)
  .text._Z12task_displayP8ak_msg_t
-                0x000000000800b04c        0x4 build_soccer_game/task_display.o
-                0x000000000800b04c                task_display(ak_msg_t*)
+                0x000000000800b068        0x4 build_soccer_game/task_display.o
+                0x000000000800b068                task_display(ak_msg_t*)
  .text._Z7task_ifP8ak_msg_t
-                0x000000000800b050       0xe4 build_soccer_game/task_if.o
-                0x000000000800b050                task_if(ak_msg_t*)
+                0x000000000800b06c       0xe4 build_soccer_game/task_if.o
+                0x000000000800b06c                task_if(ak_msg_t*)
  .text._Z12task_rf24_ifP8ak_msg_t
-                0x000000000800b134        0x2 build_soccer_game/task_rf24_if.o
-                0x000000000800b134                task_rf24_if(ak_msg_t*)
- *fill*         0x000000000800b136        0x2 
+                0x000000000800b150        0x2 build_soccer_game/task_rf24_if.o
+                0x000000000800b150                task_rf24_if(ak_msg_t*)
+ *fill*         0x000000000800b152        0x2 
  .text._Z12task_uart_ifP8ak_msg_t
-                0x000000000800b138       0xc4 build_soccer_game/task_uart_if.o
-                0x000000000800b138                task_uart_if(ak_msg_t*)
+                0x000000000800b154       0xc4 build_soccer_game/task_uart_if.o
+                0x000000000800b154                task_uart_if(ak_msg_t*)
  .text._Z8task_dbgP8ak_msg_t
-                0x000000000800b1fc        0x2 build_soccer_game/task_dbg.o
-                0x000000000800b1fc                task_dbg(ak_msg_t*)
+                0x000000000800b218        0x2 build_soccer_game/task_dbg.o
+                0x000000000800b218                task_dbg(ak_msg_t*)
  .text._ZL19view_render_dynamicPv
-                0x000000000800b1fe        0xa build_soccer_game/view_render.o
+                0x000000000800b21a        0xa build_soccer_game/view_render.o
  .text._Z22view_render_display_onv
-                0x000000000800b208        0xc build_soccer_game/view_render.o
-                0x000000000800b208                view_render_display_on()
+                0x000000000800b224        0xc build_soccer_game/view_render.o
+                0x000000000800b224                view_render_display_on()
  .text.startup._GLOBAL__sub_I_view_render
-                0x000000000800b214        0xc build_soccer_game/view_render.o
+                0x000000000800b230        0xc build_soccer_game/view_render.o
  .text.exit._GLOBAL__sub_D_view_render
-                0x000000000800b220        0xc build_soccer_game/view_render.o
+                0x000000000800b23c        0xc build_soccer_game/view_render.o
  .text._Z18view_render_screenP13view_screen_t
-                0x000000000800b22c       0x68 build_soccer_game/view_render.o
-                0x000000000800b22c                view_render_screen(view_screen_t*)
+                0x000000000800b248       0x7c build_soccer_game/view_render.o
+                0x000000000800b248                view_render_screen(view_screen_t*)
  .text._ZL21view_render_rectanglePv
-                0x000000000800b294       0xe8 build_soccer_game/view_render.o
+                0x000000000800b2c4       0xe8 build_soccer_game/view_render.o
  .text._Z12scr_mng_ctorP9scr_mng_tPFvP8ak_msg_tEP13view_screen_t
-                0x000000000800b37c       0x20 build_soccer_game/screen_manager.o
-                0x000000000800b37c                scr_mng_ctor(scr_mng_t*, void (*)(ak_msg_t*), view_screen_t*)
+                0x000000000800b3ac       0x20 build_soccer_game/screen_manager.o
+                0x000000000800b3ac                scr_mng_ctor(scr_mng_t*, void (*)(ak_msg_t*), view_screen_t*)
  .text._Z16scr_mng_dispatchP8ak_msg_t
-                0x000000000800b39c       0x48 build_soccer_game/screen_manager.o
-                0x000000000800b39c                scr_mng_dispatch(ak_msg_t*)
+                0x000000000800b3cc       0x48 build_soccer_game/screen_manager.o
+                0x000000000800b3cc                scr_mng_dispatch(ak_msg_t*)
  .text._Z12scr_mng_tranPFvP8ak_msg_tEP13view_screen_t
-                0x000000000800b3e4       0x44 build_soccer_game/screen_manager.o
-                0x000000000800b3e4                scr_mng_tran(void (*)(ak_msg_t*), view_screen_t*)
+                0x000000000800b414       0x3c build_soccer_game/screen_manager.o
+                0x000000000800b414                scr_mng_tran(void (*)(ak_msg_t*), view_screen_t*)
  .text._Z39scr_mng_contain_screen_none_update_markv
-                0x000000000800b428        0xc build_soccer_game/screen_manager.o
-                0x000000000800b428                scr_mng_contain_screen_none_update_mark()
+                0x000000000800b450        0xc build_soccer_game/screen_manager.o
+                0x000000000800b450                scr_mng_contain_screen_none_update_mark()
  .text._ZN12Adafruit_GFX8drawLineEsssst
-                0x000000000800b434       0xbe build_soccer_game/Adafruit_GFX.o
-                0x000000000800b434                Adafruit_GFX::drawLine(short, short, short, short, unsigned short)
+                0x000000000800b45c       0xbe build_soccer_game/Adafruit_GFX.o
+                0x000000000800b45c                Adafruit_GFX::drawLine(short, short, short, short, unsigned short)
  .text._ZN12Adafruit_GFX8drawRectEsssst
-                0x000000000800b4f2       0x68 build_soccer_game/Adafruit_GFX.o
-                0x000000000800b4f2                Adafruit_GFX::drawRect(short, short, short, short, unsigned short)
+                0x000000000800b51a       0x68 build_soccer_game/Adafruit_GFX.o
+                0x000000000800b51a                Adafruit_GFX::drawRect(short, short, short, short, unsigned short)
  .text._ZN12Adafruit_GFX13drawFastVLineEssst
-                0x000000000800b55a       0x1c build_soccer_game/Adafruit_GFX.o
-                0x000000000800b55a                Adafruit_GFX::drawFastVLine(short, short, short, unsigned short)
+                0x000000000800b582       0x1c build_soccer_game/Adafruit_GFX.o
+                0x000000000800b582                Adafruit_GFX::drawFastVLine(short, short, short, unsigned short)
  .text._ZN12Adafruit_GFX13drawFastHLineEssst
-                0x000000000800b576       0x1a build_soccer_game/Adafruit_GFX.o
-                0x000000000800b576                Adafruit_GFX::drawFastHLine(short, short, short, unsigned short)
+                0x000000000800b59e       0x1a build_soccer_game/Adafruit_GFX.o
+                0x000000000800b59e                Adafruit_GFX::drawFastHLine(short, short, short, unsigned short)
  .text._ZN12Adafruit_GFX8fillRectEsssst
-                0x000000000800b590       0x38 build_soccer_game/Adafruit_GFX.o
-                0x000000000800b590                Adafruit_GFX::fillRect(short, short, short, short, unsigned short)
+                0x000000000800b5b8       0x38 build_soccer_game/Adafruit_GFX.o
+                0x000000000800b5b8                Adafruit_GFX::fillRect(short, short, short, short, unsigned short)
  .text._ZN12Adafruit_GFX10fillScreenEt
-                0x000000000800b5c8       0x1c build_soccer_game/Adafruit_GFX.o
-                0x000000000800b5c8                Adafruit_GFX::fillScreen(unsigned short)
+                0x000000000800b5f0       0x1c build_soccer_game/Adafruit_GFX.o
+                0x000000000800b5f0                Adafruit_GFX::fillScreen(unsigned short)
  .text._ZN12Adafruit_GFXC2Ess
-                0x000000000800b5e4       0x28 build_soccer_game/Adafruit_GFX.o
-                0x000000000800b5e4                Adafruit_GFX::Adafruit_GFX(short, short)
-                0x000000000800b5e4                Adafruit_GFX::Adafruit_GFX(short, short)
+                0x000000000800b60c       0x28 build_soccer_game/Adafruit_GFX.o
+                0x000000000800b60c                Adafruit_GFX::Adafruit_GFX(short, short)
+                0x000000000800b60c                Adafruit_GFX::Adafruit_GFX(short, short)
  .text._ZN12Adafruit_GFX10drawCircleEssst
-                0x000000000800b60c      0x172 build_soccer_game/Adafruit_GFX.o
-                0x000000000800b60c                Adafruit_GFX::drawCircle(short, short, short, unsigned short)
+                0x000000000800b634      0x172 build_soccer_game/Adafruit_GFX.o
+                0x000000000800b634                Adafruit_GFX::drawCircle(short, short, short, unsigned short)
  .text._ZN12Adafruit_GFX16drawCircleHelperEsssht
-                0x000000000800b77e      0x17a build_soccer_game/Adafruit_GFX.o
-                0x000000000800b77e                Adafruit_GFX::drawCircleHelper(short, short, short, unsigned char, unsigned short)
+                0x000000000800b7a6      0x17a build_soccer_game/Adafruit_GFX.o
+                0x000000000800b7a6                Adafruit_GFX::drawCircleHelper(short, short, short, unsigned char, unsigned short)
  .text._ZN12Adafruit_GFX16fillCircleHelperEssshst
-                0x000000000800b8f8      0x124 build_soccer_game/Adafruit_GFX.o
-                0x000000000800b8f8                Adafruit_GFX::fillCircleHelper(short, short, short, unsigned char, short, unsigned short)
+                0x000000000800b920      0x124 build_soccer_game/Adafruit_GFX.o
+                0x000000000800b920                Adafruit_GFX::fillCircleHelper(short, short, short, unsigned char, short, unsigned short)
  .text._ZN12Adafruit_GFX10fillCircleEssst
-                0x000000000800ba1c       0x4a build_soccer_game/Adafruit_GFX.o
-                0x000000000800ba1c                Adafruit_GFX::fillCircle(short, short, short, unsigned short)
+                0x000000000800ba44       0x4a build_soccer_game/Adafruit_GFX.o
+                0x000000000800ba44                Adafruit_GFX::fillCircle(short, short, short, unsigned short)
  .text._ZN12Adafruit_GFX13drawRoundRectEssssst
-                0x000000000800ba66      0x10e build_soccer_game/Adafruit_GFX.o
-                0x000000000800ba66                Adafruit_GFX::drawRoundRect(short, short, short, short, short, unsigned short)
+                0x000000000800ba8e      0x10e build_soccer_game/Adafruit_GFX.o
+                0x000000000800ba8e                Adafruit_GFX::drawRoundRect(short, short, short, short, short, unsigned short)
  .text._ZN12Adafruit_GFX13fillRoundRectEssssst
-                0x000000000800bb74       0x88 build_soccer_game/Adafruit_GFX.o
-                0x000000000800bb74                Adafruit_GFX::fillRoundRect(short, short, short, short, short, unsigned short)
+                0x000000000800bb9c       0x88 build_soccer_game/Adafruit_GFX.o
+                0x000000000800bb9c                Adafruit_GFX::fillRoundRect(short, short, short, short, short, unsigned short)
  .text._ZN12Adafruit_GFX10drawBitmapEssPKhsst
-                0x000000000800bbfc       0x92 build_soccer_game/Adafruit_GFX.o
-                0x000000000800bbfc                Adafruit_GFX::drawBitmap(short, short, unsigned char const*, short, short, unsigned short)
- *fill*         0x000000000800bc8e        0x2 
+                0x000000000800bc24       0x92 build_soccer_game/Adafruit_GFX.o
+                0x000000000800bc24                Adafruit_GFX::drawBitmap(short, short, unsigned char const*, short, short, unsigned short)
+ *fill*         0x000000000800bcb6        0x2 
  .text._ZN12Adafruit_GFX8drawCharEsshtth
-                0x000000000800bc90      0x108 build_soccer_game/Adafruit_GFX.o
-                0x000000000800bc90                Adafruit_GFX::drawChar(short, short, unsigned char, unsigned short, unsigned short, unsigned char)
+                0x000000000800bcb8      0x108 build_soccer_game/Adafruit_GFX.o
+                0x000000000800bcb8                Adafruit_GFX::drawChar(short, short, unsigned char, unsigned short, unsigned short, unsigned char)
  .text._ZN12Adafruit_GFX5writeEh
-                0x000000000800bd98       0x64 build_soccer_game/Adafruit_GFX.o
-                0x000000000800bd98                Adafruit_GFX::write(unsigned char)
+                0x000000000800bdc0       0x64 build_soccer_game/Adafruit_GFX.o
+                0x000000000800bdc0                Adafruit_GFX::write(unsigned char)
  .text._ZN12Adafruit_GFX9setCursorEss
-                0x000000000800bdfc        0x6 build_soccer_game/Adafruit_GFX.o
-                0x000000000800bdfc                Adafruit_GFX::setCursor(short, short)
+                0x000000000800be24        0x6 build_soccer_game/Adafruit_GFX.o
+                0x000000000800be24                Adafruit_GFX::setCursor(short, short)
  .text._ZN12Adafruit_GFX11setTextSizeEh
-                0x000000000800be02        0xa build_soccer_game/Adafruit_GFX.o
-                0x000000000800be02                Adafruit_GFX::setTextSize(unsigned char)
+                0x000000000800be2a        0xa build_soccer_game/Adafruit_GFX.o
+                0x000000000800be2a                Adafruit_GFX::setTextSize(unsigned char)
  .text._ZN12Adafruit_GFX12setTextColorEt
-                0x000000000800be0c        0x6 build_soccer_game/Adafruit_GFX.o
-                0x000000000800be0c                Adafruit_GFX::setTextColor(unsigned short)
+                0x000000000800be34        0x6 build_soccer_game/Adafruit_GFX.o
+                0x000000000800be34                Adafruit_GFX::setTextColor(unsigned short)
  .text._ZN12Adafruit_GFX5widthEv
-                0x000000000800be12        0x6 build_soccer_game/Adafruit_GFX.o
-                0x000000000800be12                Adafruit_GFX::width()
+                0x000000000800be3a        0x6 build_soccer_game/Adafruit_GFX.o
+                0x000000000800be3a                Adafruit_GFX::width()
  .text._ZN12Adafruit_GFX6heightEv
-                0x000000000800be18        0x6 build_soccer_game/Adafruit_GFX.o
-                0x000000000800be18                Adafruit_GFX::height()
+                0x000000000800be40        0x6 build_soccer_game/Adafruit_GFX.o
+                0x000000000800be40                Adafruit_GFX::height()
  .text._ZN17Adafruit_oled_drv9updateRowEii
-                0x000000000800be1e       0x1e build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800be1e                Adafruit_oled_drv::updateRow(int, int)
+                0x000000000800be46       0x1e build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800be46                Adafruit_oled_drv::updateRow(int, int)
  .text._ZN17Adafruit_oled_drv9drawPixelEsst
-                0x000000000800be3c       0x52 build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800be3c                Adafruit_oled_drv::drawPixel(short, short, unsigned short)
- *fill*         0x000000000800be8e        0x2 
+                0x000000000800be64       0x52 build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800be64                Adafruit_oled_drv::drawPixel(short, short, unsigned short)
+ *fill*         0x000000000800beb6        0x2 
  .text._ZN17Adafruit_oled_drvC2Ev
-                0x000000000800be90       0x28 build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800be90                Adafruit_oled_drv::Adafruit_oled_drv()
-                0x000000000800be90                Adafruit_oled_drv::Adafruit_oled_drv()
+                0x000000000800beb8       0x28 build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800beb8                Adafruit_oled_drv::Adafruit_oled_drv()
+                0x000000000800beb8                Adafruit_oled_drv::Adafruit_oled_drv()
  .text._ZN17Adafruit_oled_drvD2Ev
-                0x000000000800beb8        0x2 build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800beb8                Adafruit_oled_drv::~Adafruit_oled_drv()
-                0x000000000800beb8                Adafruit_oled_drv::~Adafruit_oled_drv()
+                0x000000000800bee0        0x2 build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800bee0                Adafruit_oled_drv::~Adafruit_oled_drv()
+                0x000000000800bee0                Adafruit_oled_drv::~Adafruit_oled_drv()
  .text._ZNK17Adafruit_oled_drv14getFrameBufferEv
-                0x000000000800beba        0x4 build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800beba                Adafruit_oled_drv::getFrameBuffer() const
+                0x000000000800bee2        0x4 build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800bee2                Adafruit_oled_drv::getFrameBuffer() const
  .text._ZNK17Adafruit_oled_drv18getFrameBufferSizeEv
-                0x000000000800bebe        0x6 build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800bebe                Adafruit_oled_drv::getFrameBufferSize() const
+                0x000000000800bee6        0x6 build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800bee6                Adafruit_oled_drv::getFrameBufferSize() const
  .text._ZN17Adafruit_oled_drv5clearEb
-                0x000000000800bec4       0x22 build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800bec4                Adafruit_oled_drv::clear(bool)
+                0x000000000800beec       0x22 build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800beec                Adafruit_oled_drv::clear(bool)
  .text._ZN17Adafruit_oled_drv9writeByteEh
-                0x000000000800bee6       0x54 build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800bee6                Adafruit_oled_drv::writeByte(unsigned char)
+                0x000000000800bf0e       0x54 build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800bf0e                Adafruit_oled_drv::writeByte(unsigned char)
  .text._ZN17Adafruit_oled_drv8startIICEv
-                0x000000000800bf3a       0x2c build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800bf3a                Adafruit_oled_drv::startIIC()
+                0x000000000800bf62       0x2c build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800bf62                Adafruit_oled_drv::startIIC()
  .text._ZN17Adafruit_oled_drv7stopIICEv
-                0x000000000800bf66       0x2c build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800bf66                Adafruit_oled_drv::stopIIC()
+                0x000000000800bf8e       0x2c build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800bf8e                Adafruit_oled_drv::stopIIC()
  .text._ZN17Adafruit_oled_drv12writeCommandEh
-                0x000000000800bf92       0x2c build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800bf92                Adafruit_oled_drv::writeCommand(unsigned char)
- *fill*         0x000000000800bfbe        0x2 
+                0x000000000800bfba       0x2c build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800bfba                Adafruit_oled_drv::writeCommand(unsigned char)
+ *fill*         0x000000000800bfe6        0x2 
  .text._ZN17Adafruit_oled_drv10initializeEv
-                0x000000000800bfc0      0x120 build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800bfc0                Adafruit_oled_drv::initialize()
+                0x000000000800bfe8      0x120 build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800bfe8                Adafruit_oled_drv::initialize()
  .text._ZN17Adafruit_oled_drv10display_onEv
-                0x000000000800c0e0        0x6 build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800c0e0                Adafruit_oled_drv::display_on()
+                0x000000000800c108        0x6 build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800c108                Adafruit_oled_drv::display_on()
  .text._ZN17Adafruit_oled_drv11display_offEv
-                0x000000000800c0e6        0x6 build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800c0e6                Adafruit_oled_drv::display_off()
+                0x000000000800c10e        0x6 build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800c10e                Adafruit_oled_drv::display_off()
  .text._ZN17Adafruit_oled_drv17startDataSequenceEv
-                0x000000000800c0ec       0x1c build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800c0ec                Adafruit_oled_drv::startDataSequence()
+                0x000000000800c114       0x1c build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800c114                Adafruit_oled_drv::startDataSequence()
  .text._ZN17Adafruit_oled_drv6updateEv
-                0x000000000800c108       0x70 build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800c108                Adafruit_oled_drv::update()
+                0x000000000800c130       0x70 build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800c130                Adafruit_oled_drv::update()
  .text._ZN17Adafruit_oled_drv9updateRowEi
-                0x000000000800c178       0x6c build_soccer_game/Adafruit_oled_drv.o
-                0x000000000800c178                Adafruit_oled_drv::updateRow(int)
+                0x000000000800c1a0       0x6c build_soccer_game/Adafruit_oled_drv.o
+                0x000000000800c1a0                Adafruit_oled_drv::updateRow(int)
  .text.eeprom_read
-                0x000000000800c1e4        0x4 build_soccer_game/eeprom.o
-                0x000000000800c1e4                eeprom_read
+                0x000000000800c20c        0x4 build_soccer_game/eeprom.o
+                0x000000000800c20c                eeprom_read
  .text.eeprom_write
-                0x000000000800c1e8        0x4 build_soccer_game/eeprom.o
-                0x000000000800c1e8                eeprom_write
+                0x000000000800c210        0x4 build_soccer_game/eeprom.o
+                0x000000000800c210                eeprom_write
  .text.eeprom_erase
-                0x000000000800c1ec        0x4 build_soccer_game/eeprom.o
-                0x000000000800c1ec                eeprom_erase
+                0x000000000800c214        0x4 build_soccer_game/eeprom.o
+                0x000000000800c214                eeprom_erase
  .text._ZL19link_hal_write_byteh
-                0x000000000800c1f0        0x2 build_soccer_game/link_hal.o
+                0x000000000800c218        0x2 build_soccer_game/link_hal.o
  .text._ZL17link_hal_rev_byteh
-                0x000000000800c1f2        0x4 build_soccer_game/link_hal.o
- *fill*         0x000000000800c1f6        0x2 
+                0x000000000800c21a        0x4 build_soccer_game/link_hal.o
+ *fill*         0x000000000800c21e        0x2 
  .text._Z23link_hal_reg_write_bytePFhhE
-                0x000000000800c1f8       0x28 build_soccer_game/link_hal.o
-                0x000000000800c1f8                link_hal_reg_write_byte(unsigned char (*)(unsigned char))
- .text._Z21link_hal_reg_rev_bytePFhhE
                 0x000000000800c220       0x28 build_soccer_game/link_hal.o
-                0x000000000800c220                link_hal_reg_rev_byte(unsigned char (*)(unsigned char))
+                0x000000000800c220                link_hal_reg_write_byte(unsigned char (*)(unsigned char))
+ .text._Z21link_hal_reg_rev_bytePFhhE
+                0x000000000800c248       0x28 build_soccer_game/link_hal.o
+                0x000000000800c248                link_hal_reg_rev_byte(unsigned char (*)(unsigned char))
  .text._ZL21fsm_link_state_handleP8ak_msg_t
-                0x000000000800c248      0x2b0 build_soccer_game/link.o
+                0x000000000800c270      0x2b0 build_soccer_game/link.o
  .text._ZL19fsm_link_state_initP8ak_msg_t
-                0x000000000800c4f8       0x80 build_soccer_game/link.o
+                0x000000000800c520       0x80 build_soccer_game/link.o
  .text._Z9task_linkP8ak_msg_t
-                0x000000000800c578        0xc build_soccer_game/link.o
-                0x000000000800c578                task_link(ak_msg_t*)
+                0x000000000800c5a0        0xc build_soccer_game/link.o
+                0x000000000800c5a0                task_link(ak_msg_t*)
  .text._Z23link_init_state_machinev
-                0x000000000800c584       0x2c build_soccer_game/link.o
-                0x000000000800c584                link_init_state_machine()
+                0x000000000800c5ac       0x2c build_soccer_game/link.o
+                0x000000000800c5ac                link_init_state_machine()
  .text._ZL23link_mac_frame_send_reqv
-                0x000000000800c5b0       0x3c build_soccer_game/link_mac.o
+                0x000000000800c5d8       0x3c build_soccer_game/link_mac.o
  .text._ZL23link_mac_frame_send_endv
-                0x000000000800c5ec       0x34 build_soccer_game/link_mac.o
+                0x000000000800c614       0x34 build_soccer_game/link_mac.o
  .text._ZL28link_mac_frame_cals_checksumP16link_mac_frame_t.constprop.0
-                0x000000000800c620       0x38 build_soccer_game/link_mac.o
+                0x000000000800c648       0x38 build_soccer_game/link_mac.o
  .text._Z25fsm_link_mac_state_handleP8ak_msg_t
-                0x000000000800c658      0x2b8 build_soccer_game/link_mac.o
-                0x000000000800c658                fsm_link_mac_state_handle(ak_msg_t*)
+                0x000000000800c680      0x2b8 build_soccer_game/link_mac.o
+                0x000000000800c680                fsm_link_mac_state_handle(ak_msg_t*)
  .text._Z13task_link_macP8ak_msg_t
-                0x000000000800c910        0xc build_soccer_game/link_mac.o
-                0x000000000800c910                task_link_mac(ak_msg_t*)
+                0x000000000800c938        0xc build_soccer_game/link_mac.o
+                0x000000000800c938                task_link_mac(ak_msg_t*)
  .text._Z23fsm_link_mac_state_initP8ak_msg_t
-                0x000000000800c91c       0x88 build_soccer_game/link_mac.o
-                0x000000000800c91c                fsm_link_mac_state_init(ak_msg_t*)
+                0x000000000800c944       0x88 build_soccer_game/link_mac.o
+                0x000000000800c944                fsm_link_mac_state_init(ak_msg_t*)
  .text._ZL26link_phy_frame_write_blockPhm
-                0x000000000800c9a4       0x1c build_soccer_game/link_phy.o
+                0x000000000800c9cc       0x1c build_soccer_game/link_phy.o
  .text._ZL20link_phy_frame_writeP16link_phy_frame_t
-                0x000000000800c9c0       0x1c build_soccer_game/link_phy.o
+                0x000000000800c9e8       0x1c build_soccer_game/link_phy.o
  .text._ZL28link_phy_frame_cals_checksumP16link_phy_frame_t
-                0x000000000800c9dc       0x38 build_soccer_game/link_phy.o
+                0x000000000800ca04       0x38 build_soccer_game/link_phy.o
  .text._ZL25link_phy_frame_write_byteh
-                0x000000000800ca14        0xc build_soccer_game/link_phy.o
+                0x000000000800ca3c        0xc build_soccer_game/link_phy.o
  .text._ZL26ac_link_phy_frame_rev_byteh
-                0x000000000800ca20      0x100 build_soccer_game/link_phy.o
+                0x000000000800ca48      0x100 build_soccer_game/link_phy.o
  .text._ZL19link_phy_frame_sendv
-                0x000000000800cb20       0x2c build_soccer_game/link_phy.o
+                0x000000000800cb48       0x2c build_soccer_game/link_phy.o
  .text._Z25fsm_link_phy_state_handleP8ak_msg_t
-                0x000000000800cb4c      0x1f0 build_soccer_game/link_phy.o
-                0x000000000800cb4c                fsm_link_phy_state_handle(ak_msg_t*)
+                0x000000000800cb74      0x1f0 build_soccer_game/link_phy.o
+                0x000000000800cb74                fsm_link_phy_state_handle(ak_msg_t*)
  .text._Z13task_link_phyP8ak_msg_t
-                0x000000000800cd3c        0xc build_soccer_game/link_phy.o
-                0x000000000800cd3c                task_link_phy(ak_msg_t*)
+                0x000000000800cd64        0xc build_soccer_game/link_phy.o
+                0x000000000800cd64                task_link_phy(ak_msg_t*)
  .text._Z23fsm_link_phy_state_initP8ak_msg_t
-                0x000000000800cd48       0x90 build_soccer_game/link_phy.o
-                0x000000000800cd48                fsm_link_phy_state_init(ak_msg_t*)
+                0x000000000800cd70       0x90 build_soccer_game/link_phy.o
+                0x000000000800cd70                fsm_link_phy_state_init(ak_msg_t*)
  .text._Z26link_phy_get_send_frame_tov
-                0x000000000800cdd8       0x10 build_soccer_game/link_phy.o
-                0x000000000800cdd8                link_phy_get_send_frame_to()
+                0x000000000800ce00       0x10 build_soccer_game/link_phy.o
+                0x000000000800ce00                link_phy_get_send_frame_to()
  .text._Z13link_pdu_initv
-                0x000000000800cde8       0x54 build_soccer_game/link_data.o
-                0x000000000800cde8                link_pdu_init()
+                0x000000000800ce10       0x54 build_soccer_game/link_data.o
+                0x000000000800ce10                link_pdu_init()
  .text._Z15link_pdu_mallocv
-                0x000000000800ce3c       0x24 build_soccer_game/link_data.o
-                0x000000000800ce3c                link_pdu_malloc()
+                0x000000000800ce64       0x24 build_soccer_game/link_data.o
+                0x000000000800ce64                link_pdu_malloc()
  .text._Z12link_pdu_getm
-                0x000000000800ce60       0x3c build_soccer_game/link_data.o
-                0x000000000800ce60                link_pdu_get(unsigned long)
+                0x000000000800ce88       0x3c build_soccer_game/link_data.o
+                0x000000000800ce88                link_pdu_get(unsigned long)
  .text._Z13link_pdu_freem
-                0x000000000800ce9c       0x4c build_soccer_game/link_data.o
-                0x000000000800ce9c                link_pdu_free(unsigned long)
+                0x000000000800cec4       0x4c build_soccer_game/link_data.o
+                0x000000000800cec4                link_pdu_free(unsigned long)
  .text._Z17link_get_src_addrv
-                0x000000000800cee8       0x18 build_soccer_game/link_data.o
-                0x000000000800cee8                link_get_src_addr()
+                0x000000000800cf10       0x18 build_soccer_game/link_data.o
+                0x000000000800cf10                link_get_src_addr()
  .text._Z17link_get_des_addrv
-                0x000000000800cf00       0x18 build_soccer_game/link_data.o
-                0x000000000800cf00                link_get_des_addr()
+                0x000000000800cf28       0x18 build_soccer_game/link_data.o
+                0x000000000800cf28                link_get_des_addr()
  .text._Z7pinModehh
-                0x000000000800cf18       0x84 build_soccer_game/wiring_digital.o
-                0x000000000800cf18                pinMode(unsigned char, unsigned char)
+                0x000000000800cf40       0x84 build_soccer_game/wiring_digital.o
+                0x000000000800cf40                pinMode(unsigned char, unsigned char)
  .text._Z12digitalWritehh
-                0x000000000800cf9c       0x78 build_soccer_game/wiring_digital.o
-                0x000000000800cf9c                digitalWrite(unsigned char, unsigned char)
+                0x000000000800cfc4       0x78 build_soccer_game/wiring_digital.o
+                0x000000000800cfc4                digitalWrite(unsigned char, unsigned char)
  .text._ZN5Print5writeEPKhj
-                0x000000000800d014       0x22 build_soccer_game/Print.o
-                0x000000000800d014                Print::write(unsigned char const*, unsigned int)
+                0x000000000800d03c       0x22 build_soccer_game/Print.o
+                0x000000000800d03c                Print::write(unsigned char const*, unsigned int)
  .text._ZN5Print5writeEPKc
-                0x000000000800d036       0x20 build_soccer_game/Print.o
-                0x000000000800d036                Print::write(char const*)
+                0x000000000800d05e       0x20 build_soccer_game/Print.o
+                0x000000000800d05e                Print::write(char const*)
  .text._ZN5Print5printEPKc
-                0x000000000800d056        0x8 build_soccer_game/Print.o
-                0x000000000800d056                Print::print(char const*)
+                0x000000000800d07e        0x8 build_soccer_game/Print.o
+                0x000000000800d07e                Print::print(char const*)
  .text._ZN5Print5printEc
-                0x000000000800d05e        0x6 build_soccer_game/Print.o
-                0x000000000800d05e                Print::print(char)
+                0x000000000800d086        0x6 build_soccer_game/Print.o
+                0x000000000800d086                Print::print(char)
  .text._ZN5Print11printNumberEmh
-                0x000000000800d064       0x3a build_soccer_game/Print.o
-                0x000000000800d064                Print::printNumber(unsigned long, unsigned char)
+                0x000000000800d08c       0x3a build_soccer_game/Print.o
+                0x000000000800d08c                Print::printNumber(unsigned long, unsigned char)
  .text._ZN5Print5printEli.part.0
-                0x000000000800d09e       0x28 build_soccer_game/Print.o
+                0x000000000800d0c6       0x28 build_soccer_game/Print.o
  .text._ZN5Print5printEli
-                0x000000000800d0c6       0x20 build_soccer_game/Print.o
-                0x000000000800d0c6                Print::print(long, int)
+                0x000000000800d0ee       0x20 build_soccer_game/Print.o
+                0x000000000800d0ee                Print::print(long, int)
  .text._ZN5Print5printEii
-                0x000000000800d0e6        0x4 build_soccer_game/Print.o
-                0x000000000800d0e6                Print::print(int, int)
+                0x000000000800d10e        0x4 build_soccer_game/Print.o
+                0x000000000800d10e                Print::print(int, int)
  .text._ZN5Print5printEmi
-                0x000000000800d0ea       0x16 build_soccer_game/Print.o
-                0x000000000800d0ea                Print::print(unsigned long, int)
+                0x000000000800d112       0x16 build_soccer_game/Print.o
+                0x000000000800d112                Print::print(unsigned long, int)
  .text._Z6randoml
-                0x000000000800d100       0x16 build_soccer_game/WMath.o
-                0x000000000800d100                random(long)
+                0x000000000800d128       0x16 build_soccer_game/WMath.o
+                0x000000000800d128                random(long)
  .text._Z6randomll
-                0x000000000800d116       0x14 build_soccer_game/WMath.o
-                0x000000000800d116                random(long, long)
+                0x000000000800d13e       0x14 build_soccer_game/WMath.o
+                0x000000000800d13e                random(long, long)
  .text._ZN14HardwareSerial9availableEv
-                0x000000000800d12a        0xa build_soccer_game/HardwareSerial.o
-                0x000000000800d12a                HardwareSerial::available()
+                0x000000000800d152        0xa build_soccer_game/HardwareSerial.o
+                0x000000000800d152                HardwareSerial::available()
  .text._ZN14HardwareSerial4peekEv
-                0x000000000800d134       0x14 build_soccer_game/HardwareSerial.o
-                0x000000000800d134                HardwareSerial::peek()
+                0x000000000800d15c       0x14 build_soccer_game/HardwareSerial.o
+                0x000000000800d15c                HardwareSerial::peek()
  .text._ZN14HardwareSerial4readEv
-                0x000000000800d148       0x20 build_soccer_game/HardwareSerial.o
-                0x000000000800d148                HardwareSerial::read()
+                0x000000000800d170       0x20 build_soccer_game/HardwareSerial.o
+                0x000000000800d170                HardwareSerial::read()
  .text._ZN14HardwareSerial5flushEv
-                0x000000000800d168        0x2 build_soccer_game/HardwareSerial.o
-                0x000000000800d168                HardwareSerial::flush()
+                0x000000000800d190        0x2 build_soccer_game/HardwareSerial.o
+                0x000000000800d190                HardwareSerial::flush()
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x000000000800d16a       0x26 build_soccer_game/HardwareSerial.o
-                0x000000000800d16a                HardwareSerial::availableForWrite()
+                0x000000000800d192       0x26 build_soccer_game/HardwareSerial.o
+                0x000000000800d192                HardwareSerial::availableForWrite()
  .text._ZN14HardwareSerial5writeEh
-                0x000000000800d190       0x30 build_soccer_game/HardwareSerial.o
-                0x000000000800d190                HardwareSerial::write(unsigned char)
+                0x000000000800d1b8       0x30 build_soccer_game/HardwareSerial.o
+                0x000000000800d1b8                HardwareSerial::write(unsigned char)
  .text._ZL20serial2_trigger_putcv
-                0x000000000800d1c0       0x10 build_soccer_game/HardwareSerial2.o
+                0x000000000800d1e8       0x10 build_soccer_game/HardwareSerial2.o
  .text.startup._GLOBAL__sub_I_Serial2
-                0x000000000800d1d0       0x34 build_soccer_game/HardwareSerial2.o
+                0x000000000800d1f8       0x34 build_soccer_game/HardwareSerial2.o
  .text._ZN8SPIClass9io_configEv
-                0x000000000800d204       0x68 build_soccer_game/SPI.o
-                0x000000000800d204                SPIClass::io_config()
+                0x000000000800d22c       0x68 build_soccer_game/SPI.o
+                0x000000000800d22c                SPIClass::io_config()
  .text._ZN8SPIClass5beginEv
-                0x000000000800d26c       0xd0 build_soccer_game/SPI.o
-                0x000000000800d26c                SPIClass::begin()
+                0x000000000800d294       0xd0 build_soccer_game/SPI.o
+                0x000000000800d294                SPIClass::begin()
  .text.startup._GLOBAL__sub_I__ZN8SPIClassC2Ev
-                0x000000000800d33c       0x14 build_soccer_game/SPI.o
+                0x000000000800d364       0x14 build_soccer_game/SPI.o
  .text._ZN7TwoWire9availableEv
-                0x000000000800d350       0x14 build_soccer_game/Wire.o
-                0x000000000800d350                TwoWire::available()
+                0x000000000800d378       0x14 build_soccer_game/Wire.o
+                0x000000000800d378                TwoWire::available()
  .text._ZN7TwoWire4readEv
-                0x000000000800d364       0x28 build_soccer_game/Wire.o
-                0x000000000800d364                TwoWire::read()
+                0x000000000800d38c       0x28 build_soccer_game/Wire.o
+                0x000000000800d38c                TwoWire::read()
  .text._ZN7TwoWire4peekEv
-                0x000000000800d38c       0x24 build_soccer_game/Wire.o
-                0x000000000800d38c                TwoWire::peek()
+                0x000000000800d3b4       0x24 build_soccer_game/Wire.o
+                0x000000000800d3b4                TwoWire::peek()
  .text._ZN7TwoWire5flushEv
-                0x000000000800d3b0        0x2 build_soccer_game/Wire.o
-                0x000000000800d3b0                TwoWire::flush()
- *fill*         0x000000000800d3b2        0x2 
+                0x000000000800d3d8        0x2 build_soccer_game/Wire.o
+                0x000000000800d3d8                TwoWire::flush()
+ *fill*         0x000000000800d3da        0x2 
  .text._ZN7TwoWire5writeEh
-                0x000000000800d3b4       0x54 build_soccer_game/Wire.o
-                0x000000000800d3b4                TwoWire::write(unsigned char)
+                0x000000000800d3dc       0x54 build_soccer_game/Wire.o
+                0x000000000800d3dc                TwoWire::write(unsigned char)
  .text._ZN7TwoWire5writeEPKhj
-                0x000000000800d408       0x34 build_soccer_game/Wire.o
-                0x000000000800d408                TwoWire::write(unsigned char const*, unsigned int)
+                0x000000000800d430       0x34 build_soccer_game/Wire.o
+                0x000000000800d430                TwoWire::write(unsigned char const*, unsigned int)
  .text.startup._GLOBAL__sub_I__ZN7TwoWire8rxBufferE
-                0x000000000800d43c       0x1c build_soccer_game/Wire.o
+                0x000000000800d464       0x1c build_soccer_game/Wire.o
  .text._Z12twi_transmitPKhh
-                0x000000000800d458       0x44 build_soccer_game/twi.o
-                0x000000000800d458                twi_transmit(unsigned char const*, unsigned char)
+                0x000000000800d480       0x44 build_soccer_game/twi.o
+                0x000000000800d480                twi_transmit(unsigned char const*, unsigned char)
  .text.__cxa_pure_virtual
-                0x000000000800d49c       0x1c build_soccer_game/mini_cpp.o
-                0x000000000800d49c                __cxa_pure_virtual
- .text._sbrk    0x000000000800d4b8       0x1c build_soccer_game/mini_cpp.o
-                0x000000000800d4b8                _sbrk
+                0x000000000800d4c4       0x1c build_soccer_game/mini_cpp.o
+                0x000000000800d4c4                __cxa_pure_virtual
+ .text._sbrk    0x000000000800d4e0       0x1c build_soccer_game/mini_cpp.o
+                0x000000000800d4e0                _sbrk
  .text._Z24ar_striker_move_positioni
-                0x000000000800d4d4        0x4 build_soccer_game/ar_striker.o
-                0x000000000800d4d4                ar_striker_move_position(int)
+                0x000000000800d4fc        0x4 build_soccer_game/ar_striker.o
+                0x000000000800d4fc                ar_striker_move_position(int)
  .text._Z21ar_striker_shoot_ballv
-                0x000000000800d4d8       0x14 build_soccer_game/ar_striker.o
-                0x000000000800d4d8                ar_striker_shoot_ball()
+                0x000000000800d500       0x24 build_soccer_game/ar_striker.o
+                0x000000000800d500                ar_striker_shoot_ball()
  .text._Z21ar_keeper_update_gamev
-                0x000000000800d4ec       0x28 build_soccer_game/ar_keeper.o
-                0x000000000800d4ec                ar_keeper_update_game()
+                0x000000000800d524       0x28 build_soccer_game/ar_keeper.o
+                0x000000000800d524                ar_keeper_update_game()
  .text._Z18ar_ball_score_goalv
-                0x000000000800d514       0x34 build_soccer_game/ar_ball.o
-                0x000000000800d514                ar_ball_score_goal()
+                0x000000000800d54c       0x34 build_soccer_game/ar_ball.o
+                0x000000000800d54c                ar_ball_score_goal()
  .text._Z17ar_ball_lose_lifev
-                0x000000000800d548       0x38 build_soccer_game/ar_ball.o
-                0x000000000800d548                ar_ball_lose_life()
+                0x000000000800d580       0x38 build_soccer_game/ar_ball.o
+                0x000000000800d580                ar_ball_lose_life()
  .text._Z30ar_ball_update_goalkeeper_gamev
-                0x000000000800d580       0x5c build_soccer_game/ar_ball.o
-                0x000000000800d580                ar_ball_update_goalkeeper_game()
+                0x000000000800d5b8       0x5c build_soccer_game/ar_ball.o
+                0x000000000800d5b8                ar_ball_update_goalkeeper_game()
  .text._Z27ar_ball_update_shooter_gamev
-                0x000000000800d5dc       0x50 build_soccer_game/ar_ball.o
-                0x000000000800d5dc                ar_ball_update_shooter_game()
+                0x000000000800d614       0x50 build_soccer_game/ar_ball.o
+                0x000000000800d614                ar_ball_update_shooter_game()
  .text._Z25stop_super_mode_led_blinkv
-                0x000000000800d62c       0x14 build_soccer_game/scr_soccer.o
-                0x000000000800d62c                stop_super_mode_led_blink()
+                0x000000000800d664       0x14 build_soccer_game/scr_soccer.o
+                0x000000000800d664                stop_super_mode_led_blink()
  .text._Z18stop_soccer_timersv
-                0x000000000800d640       0x26 build_soccer_game/scr_soccer.o
-                0x000000000800d640                stop_soccer_timers()
+                0x000000000800d678       0x26 build_soccer_game/scr_soccer.o
+                0x000000000800d678                stop_soccer_timers()
  .text._Z9clamp_intiii
-                0x000000000800d666       0x12 build_soccer_game/scr_soccer.o
-                0x000000000800d666                clamp_int(int, int, int)
+                0x000000000800d69e       0x12 build_soccer_game/scr_soccer.o
+                0x000000000800d69e                clamp_int(int, int, int)
  .text._Z19accept_soccer_inputv
-                0x000000000800d678       0x24 build_soccer_game/scr_soccer.o
-                0x000000000800d678                accept_soccer_input()
+                0x000000000800d6b0       0x24 build_soccer_game/scr_soccer.o
+                0x000000000800d6b0                accept_soccer_input()
  .text._Z26sync_ball_display_positionv
-                0x000000000800d69c       0x1c build_soccer_game/scr_soccer.o
-                0x000000000800d69c                sync_ball_display_position()
+                0x000000000800d6d4       0x1c build_soccer_game/scr_soccer.o
+                0x000000000800d6d4                sync_ball_display_position()
  .text._Z17set_ball_positionii
-                0x000000000800d6b8       0x14 build_soccer_game/scr_soccer.o
-                0x000000000800d6b8                set_ball_position(int, int)
+                0x000000000800d6f0       0x14 build_soccer_game/scr_soccer.o
+                0x000000000800d6f0                set_ball_position(int, int)
  .text._Z20set_striker_positioni
-                0x000000000800d6cc       0x1c build_soccer_game/scr_soccer.o
-                0x000000000800d6cc                set_striker_position(int)
+                0x000000000800d704       0x1c build_soccer_game/scr_soccer.o
+                0x000000000800d704                set_striker_position(int)
  .text._Z23align_ball_with_strikerv
-                0x000000000800d6e8       0x14 build_soccer_game/scr_soccer.o
-                0x000000000800d6e8                align_ball_with_striker()
+                0x000000000800d720       0x14 build_soccer_game/scr_soccer.o
+                0x000000000800d720                align_ball_with_striker()
  .text._Z21move_shooter_positioni
-                0x000000000800d6fc       0x18 build_soccer_game/scr_soccer.o
-                0x000000000800d6fc                move_shooter_position(int)
+                0x000000000800d734       0x18 build_soccer_game/scr_soccer.o
+                0x000000000800d734                move_shooter_position(int)
  .text._Z10reset_ballv
-                0x000000000800d714       0x78 build_soccer_game/scr_soccer.o
-                0x000000000800d714                reset_ball()
+                0x000000000800d74c       0x78 build_soccer_game/scr_soccer.o
+                0x000000000800d74c                reset_ball()
  .text._Z23schedule_countdown_tickv
-                0x000000000800d78c        0xe build_soccer_game/scr_soccer.o
-                0x000000000800d78c                schedule_countdown_tick()
- *fill*         0x000000000800d79a        0x2 
+                0x000000000800d7c4        0xe build_soccer_game/scr_soccer.o
+                0x000000000800d7c4                schedule_countdown_tick()
+ *fill*         0x000000000800d7d2        0x2 
  .text._Z21clamp_keeper_positionv
-                0x000000000800d79c       0x18 build_soccer_game/scr_soccer.o
-                0x000000000800d79c                clamp_keeper_position()
+                0x000000000800d7d4       0x18 build_soccer_game/scr_soccer.o
+                0x000000000800d7d4                clamp_keeper_position()
  .text._Z19clamp_ball_positionv
-                0x000000000800d7b4       0x34 build_soccer_game/scr_soccer.o
-                0x000000000800d7b4                clamp_ball_position()
+                0x000000000800d7ec       0x34 build_soccer_game/scr_soccer.o
+                0x000000000800d7ec                clamp_ball_position()
  .text._Z18keeper_covers_ballv
-                0x000000000800d7e8       0x2c build_soccer_game/scr_soccer.o
-                0x000000000800d7e8                keeper_covers_ball()
+                0x000000000800d820       0x2c build_soccer_game/scr_soccer.o
+                0x000000000800d820                keeper_covers_ball()
  .text._Z15view_scr_soccerv
-                0x000000000800d814      0x290 build_soccer_game/scr_soccer.o
-                0x000000000800d814                view_scr_soccer()
+                0x000000000800d84c      0x290 build_soccer_game/scr_soccer.o
+                0x000000000800d84c                view_scr_soccer()
  .text._Z14begin_gameplayv
-                0x000000000800daa4       0x40 build_soccer_game/scr_soccer.o
-                0x000000000800daa4                begin_gameplay()
+                0x000000000800dadc       0x40 build_soccer_game/scr_soccer.o
+                0x000000000800dadc                begin_gameplay()
  .text._Z15begin_countdownv
-                0x000000000800dae4       0x20 build_soccer_game/scr_soccer.o
-                0x000000000800dae4                begin_countdown()
+                0x000000000800db1c       0x20 build_soccer_game/scr_soccer.o
+                0x000000000800db1c                begin_countdown()
  .text._Z12begin_result15soccer_result_t
-                0x000000000800db04       0x2c build_soccer_game/scr_soccer.o
-                0x000000000800db04                begin_result(soccer_result_t)
+                0x000000000800db3c       0x2c build_soccer_game/scr_soccer.o
+                0x000000000800db3c                begin_result(soccer_result_t)
  .text._Z12restart_gamev
-                0x000000000800db30       0x48 build_soccer_game/scr_soccer.o
-                0x000000000800db30                restart_game()
+                0x000000000800db68       0x48 build_soccer_game/scr_soccer.o
+                0x000000000800db68                restart_game()
  .text._Z16toggle_selectionv
-                0x000000000800db78       0x14 build_soccer_game/scr_soccer.o
-                0x000000000800db78                toggle_selection()
+                0x000000000800dbb0       0x14 build_soccer_game/scr_soccer.o
+                0x000000000800dbb0                toggle_selection()
  .text._Z19activate_super_modev
-                0x000000000800db8c       0x38 build_soccer_game/scr_soccer.o
-                0x000000000800db8c                activate_super_mode()
+                0x000000000800dbc4       0x38 build_soccer_game/scr_soccer.o
+                0x000000000800dbc4                activate_super_mode()
  .text._Z17finish_super_modev
-                0x000000000800dbc4       0x1c build_soccer_game/scr_soccer.o
-                0x000000000800dbc4                finish_super_mode()
+                0x000000000800dbfc       0x1c build_soccer_game/scr_soccer.o
+                0x000000000800dbfc                finish_super_mode()
  .text._Z17scr_soccer_handleP8ak_msg_t
-                0x000000000800dbe0      0x1ec build_soccer_game/scr_soccer.o
-                0x000000000800dbe0                scr_soccer_handle(ak_msg_t*)
+                0x000000000800dc18      0x280 build_soccer_game/scr_soccer.o
+                0x000000000800dc18                scr_soccer_handle(ak_msg_t*)
  .text._Z26task_soccer_game_ball_tickP8ak_msg_t
-                0x000000000800ddcc        0x4 build_soccer_game/task_soccer_game.o
-                0x000000000800ddcc                task_soccer_game_ball_tick(ak_msg_t*)
+                0x000000000800de98        0x4 build_soccer_game/task_soccer_game.o
+                0x000000000800de98                task_soccer_game_ball_tick(ak_msg_t*)
  .text._Z28task_soccer_game_keeper_tickP8ak_msg_t
-                0x000000000800ddd0        0x4 build_soccer_game/task_soccer_game.o
-                0x000000000800ddd0                task_soccer_game_keeper_tick(ak_msg_t*)
+                0x000000000800de9c        0x4 build_soccer_game/task_soccer_game.o
+                0x000000000800de9c                task_soccer_game_keeper_tick(ak_msg_t*)
  .text._Z29task_soccer_game_striker_tickP8ak_msg_t
-                0x000000000800ddd4        0x4 build_soccer_game/task_soccer_game.o
-                0x000000000800ddd4                task_soccer_game_striker_tick(ak_msg_t*)
+                0x000000000800dea0        0x4 build_soccer_game/task_soccer_game.o
+                0x000000000800dea0                task_soccer_game_striker_tick(ak_msg_t*)
  .text._Z31task_soccer_game_countdown_tickP8ak_msg_t
-                0x000000000800ddd8        0x4 build_soccer_game/task_soccer_game.o
-                0x000000000800ddd8                task_soccer_game_countdown_tick(ak_msg_t*)
+                0x000000000800dea4        0x4 build_soccer_game/task_soccer_game.o
+                0x000000000800dea4                task_soccer_game_countdown_tick(ak_msg_t*)
  .text._Z32task_soccer_game_super_mode_tickP8ak_msg_t
-                0x000000000800dddc        0x4 build_soccer_game/task_soccer_game.o
-                0x000000000800dddc                task_soccer_game_super_mode_tick(ak_msg_t*)
+                0x000000000800dea8        0x4 build_soccer_game/task_soccer_game.o
+                0x000000000800dea8                task_soccer_game_super_mode_tick(ak_msg_t*)
  .text._Z28task_soccer_game_result_tickP8ak_msg_t
-                0x000000000800dde0        0x4 build_soccer_game/task_soccer_game.o
-                0x000000000800dde0                task_soccer_game_result_tick(ak_msg_t*)
- .text.malloc   0x000000000800dde4       0x10 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-malloc.o)
-                0x000000000800dde4                malloc
- .text.free     0x000000000800ddf4       0x10 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-malloc.o)
-                0x000000000800ddf4                free
+                0x000000000800deac        0x4 build_soccer_game/task_soccer_game.o
+                0x000000000800deac                task_soccer_game_result_tick(ak_msg_t*)
+ .text.malloc   0x000000000800deb0       0x10 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-malloc.o)
+                0x000000000800deb0                malloc
+ .text.free     0x000000000800dec0       0x10 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-malloc.o)
+                0x000000000800dec0                free
  .text._malloc_r
-                0x000000000800de04      0x558 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mallocr.o)
-                0x000000000800de04                _malloc_r
- .text.memcmp   0x000000000800e35c       0x68 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memcmp.o)
-                0x000000000800e35c                memcmp
- .text.memset   0x000000000800e3c4       0xa4 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memset.o)
-                0x000000000800e3c4                memset
+                0x000000000800ded0      0x558 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mallocr.o)
+                0x000000000800ded0                _malloc_r
+ .text.memcmp   0x000000000800e428       0x68 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memcmp.o)
+                0x000000000800e428                memcmp
+ .text.memset   0x000000000800e490       0xa4 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memset.o)
+                0x000000000800e490                memset
  .text.__malloc_lock
-                0x000000000800e468        0xc /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mlock.o)
-                0x000000000800e468                __malloc_lock
+                0x000000000800e534        0xc /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mlock.o)
+                0x000000000800e534                __malloc_lock
  .text.__malloc_unlock
-                0x000000000800e474        0xc /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mlock.o)
-                0x000000000800e474                __malloc_unlock
- .text.rand     0x000000000800e480       0x38 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-rand.o)
-                0x000000000800e480                rand
- .text._sbrk_r  0x000000000800e4b8       0x24 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-sbrkr.o)
-                0x000000000800e4b8                _sbrk_r
- .text.strcpy   0x000000000800e4dc       0xbc /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strcpy.o)
-                0x000000000800e4dc                strcpy
- .text.strlen   0x000000000800e598       0x5c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x000000000800e598                strlen
+                0x000000000800e540        0xc /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mlock.o)
+                0x000000000800e540                __malloc_unlock
+ .text.rand     0x000000000800e54c       0x38 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-rand.o)
+                0x000000000800e54c                rand
+ .text._sbrk_r  0x000000000800e584       0x24 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-sbrkr.o)
+                0x000000000800e584                _sbrk_r
+ .text.strcpy   0x000000000800e5a8       0xbc /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strcpy.o)
+                0x000000000800e5a8                strcpy
+ .text.strlen   0x000000000800e664       0x5c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x000000000800e664                strlen
  .text._strtol_l.part.0
-                0x000000000800e5f4      0x120 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strtol.o)
- .text.strtol   0x000000000800e714       0x2c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strtol.o)
-                0x000000000800e714                strtol
- .text.__errno  0x000000000800e740        0xc /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-errno.o)
-                0x000000000800e740                __errno
+                0x000000000800e6c0      0x120 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strtol.o)
+ .text.strtol   0x000000000800e7e0       0x2c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strtol.o)
+                0x000000000800e7e0                strtol
+ .text.__errno  0x000000000800e80c        0xc /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-errno.o)
+                0x000000000800e80c                __errno
  .text._malloc_trim_r
-                0x000000000800e74c       0xa0 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-freer.o)
-                0x000000000800e74c                _malloc_trim_r
- .text._free_r  0x000000000800e7ec      0x200 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-freer.o)
-                0x000000000800e7ec                _free_r
+                0x000000000800e818       0xa0 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-freer.o)
+                0x000000000800e818                _malloc_trim_r
+ .text._free_r  0x000000000800e8b8      0x200 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-freer.o)
+                0x000000000800e8b8                _free_r
  .text.__retarget_lock_acquire_recursive
-                0x000000000800e9ec        0x4 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-lock.o)
-                0x000000000800e9ec                __retarget_lock_acquire_recursive
+                0x000000000800eab8        0x4 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-lock.o)
+                0x000000000800eab8                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x000000000800e9f0        0x4 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-lock.o)
-                0x000000000800e9f0                __retarget_lock_release_recursive
+                0x000000000800eabc        0x4 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-lock.o)
+                0x000000000800eabc                __retarget_lock_release_recursive
  *(.rodata)
  *(.rodata*)
  .rodata.task_create.str1.1
-                0x000000000800e9f4        0x3 build_soccer_game/task.o
+                0x000000000800eac0        0x3 build_soccer_game/task.o
  .rodata.task_run.str1.1
-                0x000000000800e9f7       0x67 build_soccer_game/task.o
+                0x000000000800eac3       0x67 build_soccer_game/task.o
  .rodata.timer_set.str1.1
-                0x000000000800ea5e        0x3 build_soccer_game/timer.o
+                0x000000000800eb2a        0x3 build_soccer_game/timer.o
  .rodata.msg_force_free.str1.1
-                0x000000000800ea61        0x3 build_soccer_game/message.o
+                0x000000000800eb2d        0x3 build_soccer_game/message.o
  .rodata.ak_malloc.str1.1
-                0x000000000800ea64        0xa build_soccer_game/message.o
+                0x000000000800eb30        0xa build_soccer_game/message.o
  .rodata.fifo_put.str1.1
-                0x000000000800ea6e        0x5 build_soccer_game/fifo.o
+                0x000000000800eb3a        0x5 build_soccer_game/fifo.o
  .rodata.xvfprintf.str1.1
-                0x000000000800ea73        0xb build_soccer_game/xprintf.o
+                0x000000000800eb3f        0xb build_soccer_game/xprintf.o
                                           0xc (size before relaxing)
- *fill*         0x000000000800ea7e        0x2 
+ *fill*         0x000000000800eb4a        0x2 
  .rodata.buzzer_music_table
-                0x000000000800ea80       0x88 build_soccer_game/buzzer.o
+                0x000000000800eb4c       0x88 build_soccer_game/buzzer.o
  .rodata.tones_3beep
-                0x000000000800eb08       0x18 build_soccer_game/buzzer_music.o
-                0x000000000800eb08                tones_3beep
+                0x000000000800ebd4       0x18 build_soccer_game/buzzer_music.o
+                0x000000000800ebd4                tones_3beep
  .rodata.tones_bang
-                0x000000000800eb20        0xc build_soccer_game/buzzer_music.o
-                0x000000000800eb20                tones_bang
+                0x000000000800ebec        0xc build_soccer_game/buzzer_music.o
+                0x000000000800ebec                tones_bang
  .rodata.tones_click
-                0x000000000800eb2c        0x8 build_soccer_game/buzzer_music.o
-                0x000000000800eb2c                tones_click
+                0x000000000800ebf8        0x8 build_soccer_game/buzzer_music.o
+                0x000000000800ebf8                tones_click
  .rodata.tones_goodbye
-                0x000000000800eb34       0x14 build_soccer_game/buzzer_music.o
-                0x000000000800eb34                tones_goodbye
+                0x000000000800ec00       0x14 build_soccer_game/buzzer_music.o
+                0x000000000800ec00                tones_goodbye
  .rodata.tones_highscore
-                0x000000000800eb48       0x20 build_soccer_game/buzzer_music.o
-                0x000000000800eb48                tones_highscore
+                0x000000000800ec14       0x20 build_soccer_game/buzzer_music.o
+                0x000000000800ec14                tones_highscore
  .rodata.tones_jingle_bells
-                0x000000000800eb68      0x11c build_soccer_game/buzzer_music.o
-                0x000000000800eb68                tones_jingle_bells
+                0x000000000800ec34      0x11c build_soccer_game/buzzer_music.o
+                0x000000000800ec34                tones_jingle_bells
  .rodata.tones_lets_go
-                0x000000000800ec84       0x28 build_soccer_game/buzzer_music.o
-                0x000000000800ec84                tones_lets_go
+                0x000000000800ed50       0x28 build_soccer_game/buzzer_music.o
+                0x000000000800ed50                tones_lets_go
  .rodata.tones_lowscore
-                0x000000000800ecac       0x14 build_soccer_game/buzzer_music.o
-                0x000000000800ecac                tones_lowscore
+                0x000000000800ed78       0x14 build_soccer_game/buzzer_music.o
+                0x000000000800ed78                tones_lowscore
  .rodata.tones_mario_kart
-                0x000000000800ecc0      0x110 build_soccer_game/buzzer_music.o
-                0x000000000800ecc0                tones_mario_kart
+                0x000000000800ed8c      0x110 build_soccer_game/buzzer_music.o
+                0x000000000800ed8c                tones_mario_kart
  .rodata.tones_pirates
-                0x000000000800edd0      0x17c build_soccer_game/buzzer_music.o
-                0x000000000800edd0                tones_pirates
+                0x000000000800ee9c      0x17c build_soccer_game/buzzer_music.o
+                0x000000000800ee9c                tones_pirates
  .rodata.tones_smb
-                0x000000000800ef4c      0x104 build_soccer_game/buzzer_music.o
-                0x000000000800ef4c                tones_smb
+                0x000000000800f018      0x104 build_soccer_game/buzzer_music.o
+                0x000000000800f018                tones_smb
  .rodata.tones_startup
-                0x000000000800f050       0x28 build_soccer_game/buzzer_music.o
-                0x000000000800f050                tones_startup
+                0x000000000800f11c       0x28 build_soccer_game/buzzer_music.o
+                0x000000000800f11c                tones_startup
  .rodata.tones_usb_connected
-                0x000000000800f078       0x10 build_soccer_game/buzzer_music.o
-                0x000000000800f078                tones_usb_connected
+                0x000000000800f144       0x10 build_soccer_game/buzzer_music.o
+                0x000000000800f144                tones_usb_connected
  .rodata.tones_usb_disconnected
-                0x000000000800f088       0x10 build_soccer_game/buzzer_music.o
-                0x000000000800f088                tones_usb_disconnected
+                0x000000000800f154       0x10 build_soccer_game/buzzer_music.o
+                0x000000000800f154                tones_usb_disconnected
  .rodata.tones_welcome
-                0x000000000800f098       0x14 build_soccer_game/buzzer_music.o
-                0x000000000800f098                tones_welcome
+                0x000000000800f164       0x14 build_soccer_game/buzzer_music.o
+                0x000000000800f164                tones_welcome
  .rodata.vietnam_national_anthem
-                0x000000000800f0ac       0xd0 build_soccer_game/buzzer_music.o
-                0x000000000800f0ac                vietnam_national_anthem
+                0x000000000800f178       0xd0 build_soccer_game/buzzer_music.o
+                0x000000000800f178                vietnam_national_anthem
  .rodata.sys_dbg_cpu_dump.str1.1
-                0x000000000800f17c       0x5f build_soccer_game/sys_dbg.o
+                0x000000000800f248       0x5f build_soccer_game/sys_dbg.o
  .rodata.sys_dbg_stack_space_dump.str1.1
-                0x000000000800f1db       0x2f build_soccer_game/sys_dbg.o
+                0x000000000800f2a7       0x2f build_soccer_game/sys_dbg.o
  .rodata.sys_dbg_fatal.str1.1
-                0x000000000800f20a      0x25b build_soccer_game/sys_dbg.o
+                0x000000000800f2d6      0x25b build_soccer_game/sys_dbg.o
                                         0x261 (size before relaxing)
  .rodata.CSWTCH.8
-                0x000000000800f465        0xb build_soccer_game/mbutils.o
+                0x000000000800f531        0xb build_soccer_game/mbutils.o
  .rodata.aucCRCHi
-                0x000000000800f470      0x100 build_soccer_game/mbmcrc.o
+                0x000000000800f53c      0x100 build_soccer_game/mbmcrc.o
  .rodata.aucCRCLo
-                0x000000000800f570      0x100 build_soccer_game/mbmcrc.o
+                0x000000000800f63c      0x100 build_soccer_game/mbmcrc.o
  .rodata.vMBPAssert.str1.1
-                0x000000000800f670        0x3 build_soccer_game/mbportother.o
+                0x000000000800f73c        0x3 build_soccer_game/mbportother.o
  .rodata.exit_critical.str1.1
-                0x000000000800f673        0x4 build_soccer_game/platform.o
+                0x000000000800f73f        0x4 build_soccer_game/platform.o
  .rodata.default_handler.str1.1
-                0x000000000800f677        0x3 build_soccer_game/system.o
+                0x000000000800f743        0x3 build_soccer_game/system.o
  .rodata.sys_cfg_update_info.str1.1
-                0x000000000800f67a       0x62 build_soccer_game/sys_cfg.o
+                0x000000000800f746       0x62 build_soccer_game/sys_cfg.o
                                          0x64 (size before relaxing)
  .rodata.sys_ctrl_soft_watchdog_increase_counter.str1.1
-                0x000000000800f6dc        0x5 build_soccer_game/sys_cfg.o
+                0x000000000800f7a8        0x5 build_soccer_game/sys_cfg.o
  .rodata.flash_transfer.str1.1
-                0x000000000800f6e1        0x4 build_soccer_game/io_cfg.o
+                0x000000000800f7ad        0x4 build_soccer_game/io_cfg.o
  .rodata._ZL16view_scr_startupv.str1.1
-                0x000000000800f6e5        0xf build_soccer_game/scr_startup.o
+                0x000000000800f7b1        0xf build_soccer_game/scr_startup.o
  .rodata._Z18scr_startup_handleP8ak_msg_t.str1.1
-                0x000000000800f6f4       0xab build_soccer_game/scr_startup.o
+                0x000000000800f7c0       0xab build_soccer_game/scr_startup.o
  .rodata._ZL13view_scr_menuv.str1.1
-                0x000000000800f79f       0x26 build_soccer_game/scr_menu.o
+                0x000000000800f86b       0x26 build_soccer_game/scr_menu.o
  .rodata._Z15scr_menu_handleP8ak_msg_t.str1.1
-                0x000000000800f7c5       0x15 build_soccer_game/scr_menu.o
+                0x000000000800f891       0x15 build_soccer_game/scr_menu.o
                                          0x88 (size before relaxing)
  .rodata.bitmap_keeper_stance
-                0x000000000800f7da       0x4b build_soccer_game/screens_bitmap.o
-                0x000000000800f7da                bitmap_keeper_stance
+                0x000000000800f8a6       0x4b build_soccer_game/screens_bitmap.o
+                0x000000000800f8a6                bitmap_keeper_stance
  .rodata.bitmap_lose_game
-                0x000000000800f825      0x400 build_soccer_game/screens_bitmap.o
-                0x000000000800f825                bitmap_lose_game
+                0x000000000800f8f1      0x400 build_soccer_game/screens_bitmap.o
+                0x000000000800f8f1                bitmap_lose_game
  .rodata.bitmap_soccer_striker
-                0x000000000800fc25       0x48 build_soccer_game/screens_bitmap.o
-                0x000000000800fc25                bitmap_soccer_striker
+                0x000000000800fcf1       0x48 build_soccer_game/screens_bitmap.o
+                0x000000000800fcf1                bitmap_soccer_striker
  .rodata.bitmap_socer_striker_finsh
-                0x000000000800fc6d       0x48 build_soccer_game/screens_bitmap.o
-                0x000000000800fc6d                bitmap_socer_striker_finsh
+                0x000000000800fd39       0x48 build_soccer_game/screens_bitmap.o
+                0x000000000800fd39                bitmap_socer_striker_finsh
  .rodata.bitmap_vietnam_flag_b
-                0x000000000800fcb5      0x400 build_soccer_game/screens_bitmap.o
-                0x000000000800fcb5                bitmap_vietnam_flag_b
+                0x000000000800fd81      0x400 build_soccer_game/screens_bitmap.o
+                0x000000000800fd81                bitmap_vietnam_flag_b
  .rodata.bitmap_winner_goal_image
-                0x00000000080100b5      0x400 build_soccer_game/screens_bitmap.o
-                0x00000000080100b5                bitmap_winner_goal_image
+                0x0000000008010181      0x400 build_soccer_game/screens_bitmap.o
+                0x0000000008010181                bitmap_winner_goal_image
  .rodata.epd_bitmap_goal_keeper_saving
-                0x00000000080104b5       0xaa build_soccer_game/screens_bitmap.o
-                0x00000000080104b5                epd_bitmap_goal_keeper_saving
+                0x0000000008010581       0xaa build_soccer_game/screens_bitmap.o
+                0x0000000008010581                epd_bitmap_goal_keeper_saving
  .rodata.epd_bitmap_goal_post
-                0x000000000801055f       0xc8 build_soccer_game/screens_bitmap.o
-                0x000000000801055f                epd_bitmap_goal_post
+                0x000000000801062b       0xc8 build_soccer_game/screens_bitmap.o
+                0x000000000801062b                epd_bitmap_goal_post
  .rodata.epd_bitmap_soccer_guy_shooting_action
-                0x0000000008010627       0xaa build_soccer_game/screens_bitmap.o
-                0x0000000008010627                epd_bitmap_soccer_guy_shooting_action
+                0x00000000080106f3       0xaa build_soccer_game/screens_bitmap.o
+                0x00000000080106f3                epd_bitmap_soccer_guy_shooting_action
  .rodata.iconLeaderBoard
-                0x00000000080106d1      0x208 build_soccer_game/screens_bitmap.o
-                0x00000000080106d1                iconLeaderBoard
+                0x000000000801079d      0x208 build_soccer_game/screens_bitmap.o
+                0x000000000801079d                iconLeaderBoard
  .rodata._Z16scr_score_handleP8ak_msg_t.str1.1
-                0x00000000080108d9       0x62 build_soccer_game/scr_score.o
+                0x00000000080109a5       0x62 build_soccer_game/scr_score.o
  .rodata._Z11task_systemP8ak_msg_t.str1.1
-                0x000000000801093b       0x23 build_soccer_game/task_system.o
+                0x0000000008010a07       0x23 build_soccer_game/task_system.o
  .rodata.main_app.str1.1
-                0x000000000801095e      0x27a build_soccer_game/app.o
+                0x0000000008010a2a      0x27a build_soccer_game/app.o
  .rodata._Z20task_polling_consolev.str1.1
-                0x0000000008010bd8       0x31 build_soccer_game/app.o
- *fill*         0x0000000008010c09        0x3 
+                0x0000000008010ca4       0x31 build_soccer_game/app.o
+ *fill*         0x0000000008010cd5        0x3 
  .rodata.app_info
-                0x0000000008010c0c        0x8 build_soccer_game/app.o
-                0x0000000008010c0c                app_info
+                0x0000000008010cd8        0x8 build_soccer_game/app.o
+                0x0000000008010cd8                app_info
  .rodata._Z17btn_mode_callbackPv.str1.1
-                0x0000000008010c14       0x9f build_soccer_game/app_bsp.o
+                0x0000000008010ce0       0x9f build_soccer_game/app_bsp.o
  .rodata._Z15btn_up_callbackPv.str1.1
-                0x0000000008010cb3       0x99 build_soccer_game/app_bsp.o
+                0x0000000008010d7f       0x99 build_soccer_game/app_bsp.o
  .rodata._Z17btn_down_callbackPv.str1.1
-                0x0000000008010d4c       0x9f build_soccer_game/app_bsp.o
+                0x0000000008010e18       0x9f build_soccer_game/app_bsp.o
  .rodata.str1.1
-                0x0000000008010deb       0xc1 build_soccer_game/app_modbus_pull.o
+                0x0000000008010eb7       0xc1 build_soccer_game/app_modbus_pull.o
  .rodata._Z11shell_resetPh.str1.1
-                0x0000000008010eac        0x6 build_soccer_game/shell.o
+                0x0000000008010f78        0x6 build_soccer_game/shell.o
  .rodata._Z10shell_helpPh.str1.1
-                0x0000000008010eb2       0x24 build_soccer_game/shell.o
+                0x0000000008010f7e       0x24 build_soccer_game/shell.o
  .rodata._Z9shell_verPh.str1.1
-                0x0000000008010ed6      0x15d build_soccer_game/shell.o
+                0x0000000008010fa2      0x15d build_soccer_game/shell.o
                                         0x180 (size before relaxing)
  .rodata._Z11shell_flashPh.str1.1
-                0x0000000008011033       0x4f build_soccer_game/shell.o
+                0x00000000080110ff       0x4f build_soccer_game/shell.o
                                          0x60 (size before relaxing)
  .rodata._ZL26shell_lcd_dump_framebufferv.str1.1
-                0x0000000008011082       0x8e build_soccer_game/shell.o
+                0x000000000801114e       0x8e build_soccer_game/shell.o
  .rodata._Z11shell_fatalPh.str1.1
-                0x0000000008011110      0x17f build_soccer_game/shell.o
+                0x00000000080111dc      0x17f build_soccer_game/shell.o
                                         0x338 (size before relaxing)
  .rodata._Z9shell_epsPh.str1.1
-                0x000000000801128f       0x28 build_soccer_game/shell.o
+                0x000000000801135b       0x28 build_soccer_game/shell.o
  .rodata._Z9shell_ramPh.str1.1
-                0x00000000080112b7       0x53 build_soccer_game/shell.o
+                0x0000000008011383       0x53 build_soccer_game/shell.o
  .rodata._Z10shell_bootPh.str1.1
-                0x000000000801130a      0x166 build_soccer_game/shell.o
+                0x00000000080113d6      0x166 build_soccer_game/shell.o
  .rodata._Z12shell_buzzerPh.str1.1
-                0x0000000008011470      0x1c3 build_soccer_game/shell.o
+                0x000000000801153c      0x1c3 build_soccer_game/shell.o
  .rodata._Z9shell_dbgPh.str1.1
-                0x0000000008011633       0x1b build_soccer_game/shell.o
+                0x00000000080116ff       0x1b build_soccer_game/shell.o
  .rodata._Z12shell_modbusPh.str1.1
-                0x000000000801164e       0x8f build_soccer_game/shell.o
+                0x000000000801171a       0x8f build_soccer_game/shell.o
  .rodata._Z9shell_lcdPh.str1.1
-                0x00000000080116dd       0x67 build_soccer_game/shell.o
+                0x00000000080117a9       0x67 build_soccer_game/shell.o
  .rodata.str1.1
-                0x0000000008011744       0xda build_soccer_game/shell.o
+                0x0000000008011810       0xda build_soccer_game/shell.o
                                          0xdf (size before relaxing)
- *fill*         0x000000000801181e        0x2 
+ *fill*         0x00000000080118ea        0x2 
  .rodata.lgn_cmd_table
-                0x0000000008011820       0xd8 build_soccer_game/shell.o
-                0x0000000008011820                lgn_cmd_table
+                0x00000000080118ec       0xd8 build_soccer_game/shell.o
+                0x00000000080118ec                lgn_cmd_table
  .rodata._Z10task_shellP8ak_msg_t.str1.1
-                0x00000000080118f8       0x43 build_soccer_game/task_shell.o
+                0x00000000080119c4       0x43 build_soccer_game/task_shell.o
  .rodata._Z7task_fwP8ak_msg_t.str1.1
-                0x000000000801193b      0x206 build_soccer_game/task_fw.o
- *fill*         0x0000000008011b41        0x3 
+                0x0000000008011a07      0x206 build_soccer_game/task_fw.o
+ *fill*         0x0000000008011c0d        0x3 
  .rodata.app_task_polling_table
-                0x0000000008011b44       0x18 build_soccer_game/task_list.o
-                0x0000000008011b44                app_task_polling_table
+                0x0000000008011c10       0x18 build_soccer_game/task_list.o
+                0x0000000008011c10                app_task_polling_table
  .rodata.app_task_table
-                0x0000000008011b5c       0xa0 build_soccer_game/task_list.o
-                0x0000000008011b5c                app_task_table
+                0x0000000008011c28       0xa0 build_soccer_game/task_list.o
+                0x0000000008011c28                app_task_table
  .rodata._Z7task_ifP8ak_msg_t.str1.1
-                0x0000000008011bfc       0xa9 build_soccer_game/task_if.o
+                0x0000000008011cc8       0xa9 build_soccer_game/task_if.o
  .rodata._Z12task_uart_ifP8ak_msg_t.str1.1
-                0x0000000008011ca5       0xdf build_soccer_game/task_uart_if.o
+                0x0000000008011d71       0xdf build_soccer_game/task_uart_if.o
+ .rodata._Z18view_render_screenP13view_screen_t.str1.1
+                0x0000000008011e50       0x36 build_soccer_game/view_render.o
+ *fill*         0x0000000008011e86        0x2 
  .rodata._ZL11render_list
-                0x0000000008011d84        0x8 build_soccer_game/view_render.o
+                0x0000000008011e88        0x8 build_soccer_game/view_render.o
  .rodata._Z16scr_mng_dispatchP8ak_msg_t.str1.1
-                0x0000000008011d8c        0x8 build_soccer_game/screen_manager.o
+                0x0000000008011e90        0x8 build_soccer_game/screen_manager.o
  .rodata._ZL4font
-                0x0000000008011d94      0x4fb build_soccer_game/Adafruit_GFX.o
- *fill*         0x000000000801228f        0x1 
+                0x0000000008011e98      0x4fb build_soccer_game/Adafruit_GFX.o
+ *fill*         0x0000000008012393        0x1 
  .rodata._ZTV12Adafruit_GFX
-                0x0000000008012290       0x2c build_soccer_game/Adafruit_GFX.o
-                0x0000000008012290                vtable for Adafruit_GFX
+                0x0000000008012394       0x2c build_soccer_game/Adafruit_GFX.o
+                0x0000000008012394                vtable for Adafruit_GFX
  .rodata._ZTV17Adafruit_oled_drv
-                0x00000000080122bc       0x3c build_soccer_game/Adafruit_oled_drv.o
-                0x00000000080122bc                vtable for Adafruit_oled_drv
+                0x00000000080123c0       0x3c build_soccer_game/Adafruit_oled_drv.o
+                0x00000000080123c0                vtable for Adafruit_oled_drv
  .rodata._Z23link_hal_reg_write_bytePFhhE.str1.1
-                0x00000000080122f8        0x9 build_soccer_game/link_hal.o
+                0x00000000080123fc        0x9 build_soccer_game/link_hal.o
  .rodata._ZL19fsm_link_state_initP8ak_msg_t.str1.1
-                0x0000000008012301      0x110 build_soccer_game/link.o
+                0x0000000008012405      0x110 build_soccer_game/link.o
  .rodata._ZL23link_mac_frame_send_reqv.str1.1
-                0x0000000008012411        0x9 build_soccer_game/link_mac.o
+                0x0000000008012515        0x9 build_soccer_game/link_mac.o
  .rodata._Z25fsm_link_mac_state_handleP8ak_msg_t.str1.1
-                0x000000000801241a        0x5 build_soccer_game/link_mac.o
+                0x000000000801251e        0x5 build_soccer_game/link_mac.o
  .rodata._Z25fsm_link_phy_state_handleP8ak_msg_t.str1.1
-                0x000000000801241f        0x7 build_soccer_game/link_phy.o
+                0x0000000008012523        0x7 build_soccer_game/link_phy.o
  .rodata._Z13link_pdu_freeP10link_pdu_t.str1.1
-                0x0000000008012426        0x9 build_soccer_game/link_data.o
+                0x000000000801252a        0x9 build_soccer_game/link_data.o
  .rodata._Z7pinModehh.str1.1
-                0x000000000801242f        0x3 build_soccer_game/wiring_digital.o
- *fill*         0x0000000008012432        0x2 
+                0x0000000008012533        0x3 build_soccer_game/wiring_digital.o
+ *fill*         0x0000000008012536        0x2 
  .rodata._ZTV14HardwareSerial
-                0x0000000008012434       0x24 build_soccer_game/HardwareSerial.o
-                0x0000000008012434                vtable for HardwareSerial
+                0x0000000008012538       0x24 build_soccer_game/HardwareSerial.o
+                0x0000000008012538                vtable for HardwareSerial
  .rodata._ZTV7TwoWire
-                0x0000000008012458       0x20 build_soccer_game/Wire.o
-                0x0000000008012458                vtable for TwoWire
+                0x000000000801255c       0x20 build_soccer_game/Wire.o
+                0x000000000801255c                vtable for TwoWire
  .rodata.__cxa_pure_virtual.str1.1
-                0x0000000008012478        0x4 build_soccer_game/mini_cpp.o
+                0x000000000801257c        0x4 build_soccer_game/mini_cpp.o
  .rodata._Z15view_scr_soccerv.str1.1
-                0x000000000801247c       0x2b build_soccer_game/scr_soccer.o
+                0x0000000008012580       0x2b build_soccer_game/scr_soccer.o
  .rodata._Z17scr_soccer_handleP8ak_msg_t.str1.1
-                0x00000000080124a7       0x28 build_soccer_game/scr_soccer.o
-                                         0x8a (size before relaxing)
- *fill*         0x00000000080124cf        0x1 
+                0x00000000080125ab       0x81 build_soccer_game/scr_soccer.o
+                                        0x10b (size before relaxing)
  .rodata._ctype_
-                0x00000000080124d0      0x101 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-ctype_.o)
-                0x00000000080124d0                _ctype_
+                0x000000000801262c      0x101 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-ctype_.o)
+                0x000000000801262c                _ctype_
  *(.glue_7)
- .glue_7        0x00000000080125d1        0x0 linker stubs
+ .glue_7        0x000000000801272d        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x00000000080125d1        0x0 linker stubs
+ .glue_7t       0x000000000801272d        0x0 linker stubs
  *(.init)
  *(.fini)
-                0x00000000080125d4                . = ALIGN (0x4)
- *fill*         0x00000000080125d1        0x3 
-                0x00000000080125d4                _etext = .
+                0x0000000008012730                . = ALIGN (0x4)
+ *fill*         0x000000000801272d        0x3 
+                0x0000000008012730                _etext = .
 
-.vfp11_veneer   0x00000000080125d4        0x0
- .vfp11_veneer  0x00000000080125d4        0x0 linker stubs
+.vfp11_veneer   0x0000000008012730        0x0
+ .vfp11_veneer  0x0000000008012730        0x0 linker stubs
 
-.v4_bx          0x00000000080125d4        0x0
- .v4_bx         0x00000000080125d4        0x0 linker stubs
+.v4_bx          0x0000000008012730        0x0
+ .v4_bx         0x0000000008012730        0x0 linker stubs
 
-.iplt           0x00000000080125d4        0x0
- .iplt          0x00000000080125d4        0x0 build_soccer_game/task.o
+.iplt           0x0000000008012730        0x0
+ .iplt          0x0000000008012730        0x0 build_soccer_game/task.o
 
-.rel.dyn        0x00000000080125d4        0x0
- .rel.iplt      0x00000000080125d4        0x0 build_soccer_game/task.o
+.rel.dyn        0x0000000008012730        0x0
+ .rel.iplt      0x0000000008012730        0x0 build_soccer_game/task.o
 
-.ARM.exidx      0x00000000080125d4        0x8
- .ARM.exidx     0x00000000080125d4        0x8 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+.ARM.exidx      0x0000000008012730        0x8
+ .ARM.exidx     0x0000000008012730        0x8 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
 
-.preinit_array  0x00000000080125dc        0x0
-                0x00000000080125dc                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008012738        0x0
+                0x0000000008012738                PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  *(.preinit_array*)
-                0x00000000080125dc                PROVIDE (__preinit_array_end = .)
+                0x0000000008012738                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x00000000080125dc       0x10
-                0x00000000080125dc                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008012738       0x10
+                0x0000000008012738                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x00000000080125dc        0x4 build_soccer_game/view_render.o
- .init_array    0x00000000080125e0        0x4 build_soccer_game/HardwareSerial2.o
- .init_array    0x00000000080125e4        0x4 build_soccer_game/SPI.o
- .init_array    0x00000000080125e8        0x4 build_soccer_game/Wire.o
-                0x00000000080125ec                PROVIDE (__init_array_end = .)
+ .init_array    0x0000000008012738        0x4 build_soccer_game/view_render.o
+ .init_array    0x000000000801273c        0x4 build_soccer_game/HardwareSerial2.o
+ .init_array    0x0000000008012740        0x4 build_soccer_game/SPI.o
+ .init_array    0x0000000008012744        0x4 build_soccer_game/Wire.o
+                0x0000000008012748                PROVIDE (__init_array_end = .)
 
-.fini_array     0x00000000080125ec        0x4
+.fini_array     0x0000000008012748        0x4
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(.fini_array*)
- .fini_array    0x00000000080125ec        0x4 build_soccer_game/view_render.o
+ .fini_array    0x0000000008012748        0x4 build_soccer_game/view_render.o
  *(SORT_BY_NAME(.fini_array.*))
                 [!provide]                        PROVIDE (__fini_array_end = .)
 
-.end_flash      0x00000000080125f0        0x0
-                0x00000000080125f0                _end_flash = .
+.end_flash      0x000000000801274c        0x0
+                0x000000000801274c                _end_flash = .
 
 .start_ram      0x0000000020000000        0x0
                 0x0000000020000000                _start_ram = .
 
-.data           0x0000000020000000      0xa28 load address 0x00000000080125f0
+.data           0x0000000020000000      0xa28 load address 0x000000000801274c
                 0x0000000020000000                _data = .
-                0x00000000080125f0                _ldata = LOADADDR (.data)
+                0x000000000801274c                _ldata = LOADADDR (.data)
  *(vtable)
  *(.data)
  *(.data*)
@@ -4968,10 +4970,10 @@ Linker script and memory map
  *(.ram_func*)
                 0x0000000020000a28                _edata = .
 
-.igot.plt       0x0000000020000a28        0x0 load address 0x0000000008013018
+.igot.plt       0x0000000020000a28        0x0 load address 0x0000000008013174
  .igot.plt      0x0000000020000a28        0x0 build_soccer_game/task.o
 
-.bss            0x0000000020000a28     0x2618 load address 0x0000000008013018
+.bss            0x0000000020000a28     0x2618 load address 0x0000000008013174
                 0x0000000020000a28                _bss = .
  *(.bss)
  *(.bss*)
@@ -5131,11 +5133,14 @@ Linker script and memory map
                 0x0000000020001e44                btn_mode
  .bss.btn_up    0x0000000020001e5c       0x18 build_soccer_game/app_bsp.o
                 0x0000000020001e5c                btn_up
+ .bss.mode_button
+                0x0000000020001e74        0x1 build_soccer_game/app_bsp.o
+                0x0000000020001e74                mode_button
  .bss._ZL10cmd_buffer
-                0x0000000020001e74       0x80 build_soccer_game/shell.o
+                0x0000000020001e75       0x80 build_soccer_game/shell.o
  .bss._ZL12str_list_len
-                0x0000000020001ef4        0x1 build_soccer_game/shell.o
- *fill*         0x0000000020001ef5        0x3 
+                0x0000000020001ef5        0x1 build_soccer_game/shell.o
+ *fill*         0x0000000020001ef6        0x2 
  .bss._ZL8str_list
                 0x0000000020001ef8       0x20 build_soccer_game/shell.o
  .bss.buffer_console_rev
@@ -5298,14 +5303,14 @@ Linker script and memory map
  *(COMMON)
                 0x0000000020003040                _ebss = .
 
-.heap           0x0000000020003040      0x800 load address 0x0000000008015630
+.heap           0x0000000020003040      0x800 load address 0x000000000801578c
                 0x0000000020003040                __heap_start__ = .
                 0x0000000020003840                . = (. + HEAP_SIZE)
  *fill*         0x0000000020003040      0x800 
                 0x0000000020003840                . = ALIGN (0x4)
                 0x0000000020003840                __heap_end__ = .
 
-.non_clear_ram  0x0000000020003840        0x4 load address 0x0000000008015e30
+.non_clear_ram  0x0000000020003840        0x4 load address 0x0000000008015f8c
                 0x0000000020003840                _non_clear_ram = .
  *(.non_clear_ram)
  .non_clear_ram
@@ -5464,7 +5469,7 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
 LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libg.a
 LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a
 
-.debug_info     0x0000000000000000    0x7281f
+.debug_info     0x0000000000000000    0x729a5
  .debug_info    0x0000000000000000      0x226 build_soccer_game/fsm.o
  .debug_info    0x0000000000000226      0xeae build_soccer_game/task.o
  .debug_info    0x00000000000010d4      0x822 build_soccer_game/timer.o
@@ -5511,53 +5516,53 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
  .debug_info    0x0000000000016da6     0x1f00 build_soccer_game/sys_cfg.o
  .debug_info    0x0000000000018ca6     0x2565 build_soccer_game/io_cfg.o
  .debug_info    0x000000000001b20b      0x5db build_soccer_game/system_stm32l1xx.o
- .debug_info    0x000000000001b7e6     0x23c0 build_soccer_game/scr_startup.o
- .debug_info    0x000000000001dba6     0x270b build_soccer_game/scr_menu.o
- .debug_info    0x00000000000202b1     0x20a2 build_soccer_game/screens_bitmap.o
- .debug_info    0x0000000000022353     0x242b build_soccer_game/scr_score.o
- .debug_info    0x000000000002477e      0xaf3 build_soccer_game/task_system.o
- .debug_info    0x0000000000025271     0x8354 build_soccer_game/app.o
- .debug_info    0x000000000002d5c5      0x80c build_soccer_game/app_data.o
- .debug_info    0x000000000002ddd1      0xee2 build_soccer_game/app_eeprom.o
- .debug_info    0x000000000002ecb3      0x818 build_soccer_game/app_non_clear_ram.o
- .debug_info    0x000000000002f4cb      0xc13 build_soccer_game/app_bsp.o
- .debug_info    0x00000000000300de      0xd5d build_soccer_game/app_modbus_pull.o
- .debug_info    0x0000000000030e3b     0x48a5 build_soccer_game/shell.o
- .debug_info    0x00000000000356e0      0xc9c build_soccer_game/task_shell.o
- .debug_info    0x000000000003637c      0xa49 build_soccer_game/task_life.o
- .debug_info    0x0000000000036dc5     0x16b9 build_soccer_game/task_fw.o
- .debug_info    0x000000000003847e      0xb0a build_soccer_game/task_list.o
- .debug_info    0x0000000000038f88     0x2000 build_soccer_game/task_display.o
- .debug_info    0x000000000003af88      0xb47 build_soccer_game/task_if.o
- .debug_info    0x000000000003bacf      0x8b2 build_soccer_game/task_rf24_if.o
- .debug_info    0x000000000003c381      0xb51 build_soccer_game/task_uart_if.o
- .debug_info    0x000000000003ced2      0x8b2 build_soccer_game/task_dbg.o
- .debug_info    0x000000000003d784     0x2427 build_soccer_game/view_render.o
- .debug_info    0x000000000003fbab     0x21ca build_soccer_game/screen_manager.o
- .debug_info    0x0000000000041d75     0x45cb build_soccer_game/Adafruit_GFX.o
- .debug_info    0x0000000000046340     0x2fc7 build_soccer_game/Adafruit_oled_drv.o
- .debug_info    0x0000000000049307      0x908 build_soccer_game/eeprom.o
- .debug_info    0x0000000000049c0f      0x995 build_soccer_game/link_hal.o
- .debug_info    0x000000000004a5a4     0x1490 build_soccer_game/link.o
- .debug_info    0x000000000004ba34     0x17c1 build_soccer_game/link_mac.o
- .debug_info    0x000000000004d1f5     0x153c build_soccer_game/link_phy.o
- .debug_info    0x000000000004e731      0xcd7 build_soccer_game/link_data.o
- .debug_info    0x000000000004f408     0x2003 build_soccer_game/wiring_digital.o
- .debug_info    0x000000000005140b     0x33d9 build_soccer_game/Print.o
- .debug_info    0x00000000000547e4     0x1f24 build_soccer_game/WMath.o
- .debug_info    0x0000000000056708     0x386b build_soccer_game/HardwareSerial.o
- .debug_info    0x0000000000059f73     0x38e0 build_soccer_game/HardwareSerial2.o
- .debug_info    0x000000000005d853      0xfb7 build_soccer_game/SPI.o
- .debug_info    0x000000000005e80a     0x4503 build_soccer_game/Wire.o
- .debug_info    0x0000000000062d0d     0x2958 build_soccer_game/twi.o
- .debug_info    0x0000000000065665     0x138f build_soccer_game/mini_cpp.o
- .debug_info    0x00000000000669f4     0x2215 build_soccer_game/ar_striker.o
- .debug_info    0x0000000000068c09     0x21ef build_soccer_game/ar_keeper.o
- .debug_info    0x000000000006adf8     0x232f build_soccer_game/ar_ball.o
- .debug_info    0x000000000006d127     0x34ae build_soccer_game/scr_soccer.o
- .debug_info    0x00000000000705d5     0x224a build_soccer_game/task_soccer_game.o
+ .debug_info    0x000000000001b7e6     0x23d8 build_soccer_game/scr_startup.o
+ .debug_info    0x000000000001dbbe     0x2723 build_soccer_game/scr_menu.o
+ .debug_info    0x00000000000202e1     0x20a2 build_soccer_game/screens_bitmap.o
+ .debug_info    0x0000000000022383     0x243a build_soccer_game/scr_score.o
+ .debug_info    0x00000000000247bd      0xaf3 build_soccer_game/task_system.o
+ .debug_info    0x00000000000252b0     0x836c build_soccer_game/app.o
+ .debug_info    0x000000000002d61c      0x80c build_soccer_game/app_data.o
+ .debug_info    0x000000000002de28      0xee2 build_soccer_game/app_eeprom.o
+ .debug_info    0x000000000002ed0a      0x818 build_soccer_game/app_non_clear_ram.o
+ .debug_info    0x000000000002f522      0xc55 build_soccer_game/app_bsp.o
+ .debug_info    0x0000000000030177      0xd5d build_soccer_game/app_modbus_pull.o
+ .debug_info    0x0000000000030ed4     0x48a5 build_soccer_game/shell.o
+ .debug_info    0x0000000000035779      0xc9c build_soccer_game/task_shell.o
+ .debug_info    0x0000000000036415      0xa49 build_soccer_game/task_life.o
+ .debug_info    0x0000000000036e5e     0x16d1 build_soccer_game/task_fw.o
+ .debug_info    0x000000000003852f      0xb0a build_soccer_game/task_list.o
+ .debug_info    0x0000000000039039     0x2000 build_soccer_game/task_display.o
+ .debug_info    0x000000000003b039      0xb47 build_soccer_game/task_if.o
+ .debug_info    0x000000000003bb80      0x8b2 build_soccer_game/task_rf24_if.o
+ .debug_info    0x000000000003c432      0xb51 build_soccer_game/task_uart_if.o
+ .debug_info    0x000000000003cf83      0x8b2 build_soccer_game/task_dbg.o
+ .debug_info    0x000000000003d835     0x2453 build_soccer_game/view_render.o
+ .debug_info    0x000000000003fc88     0x21c1 build_soccer_game/screen_manager.o
+ .debug_info    0x0000000000041e49     0x45cb build_soccer_game/Adafruit_GFX.o
+ .debug_info    0x0000000000046414     0x2fc7 build_soccer_game/Adafruit_oled_drv.o
+ .debug_info    0x00000000000493db      0x908 build_soccer_game/eeprom.o
+ .debug_info    0x0000000000049ce3      0x995 build_soccer_game/link_hal.o
+ .debug_info    0x000000000004a678     0x1490 build_soccer_game/link.o
+ .debug_info    0x000000000004bb08     0x17c1 build_soccer_game/link_mac.o
+ .debug_info    0x000000000004d2c9     0x153c build_soccer_game/link_phy.o
+ .debug_info    0x000000000004e805      0xcd7 build_soccer_game/link_data.o
+ .debug_info    0x000000000004f4dc     0x2003 build_soccer_game/wiring_digital.o
+ .debug_info    0x00000000000514df     0x33d9 build_soccer_game/Print.o
+ .debug_info    0x00000000000548b8     0x1f24 build_soccer_game/WMath.o
+ .debug_info    0x00000000000567dc     0x386b build_soccer_game/HardwareSerial.o
+ .debug_info    0x000000000005a047     0x38e0 build_soccer_game/HardwareSerial2.o
+ .debug_info    0x000000000005d927      0xfb7 build_soccer_game/SPI.o
+ .debug_info    0x000000000005e8de     0x4503 build_soccer_game/Wire.o
+ .debug_info    0x0000000000062de1     0x2958 build_soccer_game/twi.o
+ .debug_info    0x0000000000065739     0x138f build_soccer_game/mini_cpp.o
+ .debug_info    0x0000000000066ac8     0x2222 build_soccer_game/ar_striker.o
+ .debug_info    0x0000000000068cea     0x21fc build_soccer_game/ar_keeper.o
+ .debug_info    0x000000000006aee6     0x233c build_soccer_game/ar_ball.o
+ .debug_info    0x000000000006d222     0x3539 build_soccer_game/scr_soccer.o
+ .debug_info    0x000000000007075b     0x224a build_soccer_game/task_soccer_game.o
 
-.debug_abbrev   0x0000000000000000    0x10a2a
+.debug_abbrev   0x0000000000000000    0x10a31
  .debug_abbrev  0x0000000000000000       0xdc build_soccer_game/fsm.o
  .debug_abbrev  0x00000000000000dc      0x3aa build_soccer_game/task.o
  .debug_abbrev  0x0000000000000486      0x2fb build_soccer_game/timer.o
@@ -5613,44 +5618,44 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
  .debug_abbrev  0x0000000000007759      0x1cf build_soccer_game/app_data.o
  .debug_abbrev  0x0000000000007928      0x39c build_soccer_game/app_eeprom.o
  .debug_abbrev  0x0000000000007cc4      0x1cf build_soccer_game/app_non_clear_ram.o
- .debug_abbrev  0x0000000000007e93      0x27f build_soccer_game/app_bsp.o
- .debug_abbrev  0x0000000000008112      0x339 build_soccer_game/app_modbus_pull.o
- .debug_abbrev  0x000000000000844b      0x598 build_soccer_game/shell.o
- .debug_abbrev  0x00000000000089e3      0x2e8 build_soccer_game/task_shell.o
- .debug_abbrev  0x0000000000008ccb      0x25f build_soccer_game/task_life.o
- .debug_abbrev  0x0000000000008f2a      0x36f build_soccer_game/task_fw.o
- .debug_abbrev  0x0000000000009299      0x213 build_soccer_game/task_list.o
- .debug_abbrev  0x00000000000094ac      0x2cb build_soccer_game/task_display.o
- .debug_abbrev  0x0000000000009777      0x27e build_soccer_game/task_if.o
- .debug_abbrev  0x00000000000099f5      0x1b7 build_soccer_game/task_rf24_if.o
- .debug_abbrev  0x0000000000009bac      0x238 build_soccer_game/task_uart_if.o
- .debug_abbrev  0x0000000000009de4      0x1b7 build_soccer_game/task_dbg.o
- .debug_abbrev  0x0000000000009f9b      0x425 build_soccer_game/view_render.o
- .debug_abbrev  0x000000000000a3c0      0x369 build_soccer_game/screen_manager.o
- .debug_abbrev  0x000000000000a729      0x7cb build_soccer_game/Adafruit_GFX.o
- .debug_abbrev  0x000000000000aef4      0x570 build_soccer_game/Adafruit_oled_drv.o
- .debug_abbrev  0x000000000000b464      0x1ec build_soccer_game/eeprom.o
- .debug_abbrev  0x000000000000b650      0x266 build_soccer_game/link_hal.o
- .debug_abbrev  0x000000000000b8b6      0x3cc build_soccer_game/link.o
- .debug_abbrev  0x000000000000bc82      0x4bc build_soccer_game/link_mac.o
- .debug_abbrev  0x000000000000c13e      0x5c7 build_soccer_game/link_phy.o
- .debug_abbrev  0x000000000000c705      0x318 build_soccer_game/link_data.o
- .debug_abbrev  0x000000000000ca1d      0x2a8 build_soccer_game/wiring_digital.o
- .debug_abbrev  0x000000000000ccc5      0x526 build_soccer_game/Print.o
- .debug_abbrev  0x000000000000d1eb      0x2c8 build_soccer_game/WMath.o
- .debug_abbrev  0x000000000000d4b3      0x52d build_soccer_game/HardwareSerial.o
- .debug_abbrev  0x000000000000d9e0      0x5a3 build_soccer_game/HardwareSerial2.o
- .debug_abbrev  0x000000000000df83      0x39f build_soccer_game/SPI.o
- .debug_abbrev  0x000000000000e322      0x7a1 build_soccer_game/Wire.o
- .debug_abbrev  0x000000000000eac3      0x47f build_soccer_game/twi.o
- .debug_abbrev  0x000000000000ef42      0x466 build_soccer_game/mini_cpp.o
- .debug_abbrev  0x000000000000f3a8      0x3f0 build_soccer_game/ar_striker.o
- .debug_abbrev  0x000000000000f798      0x3bf build_soccer_game/ar_keeper.o
- .debug_abbrev  0x000000000000fb57      0x418 build_soccer_game/ar_ball.o
- .debug_abbrev  0x000000000000ff6f      0x6c8 build_soccer_game/scr_soccer.o
- .debug_abbrev  0x0000000000010637      0x3f3 build_soccer_game/task_soccer_game.o
+ .debug_abbrev  0x0000000000007e93      0x292 build_soccer_game/app_bsp.o
+ .debug_abbrev  0x0000000000008125      0x339 build_soccer_game/app_modbus_pull.o
+ .debug_abbrev  0x000000000000845e      0x598 build_soccer_game/shell.o
+ .debug_abbrev  0x00000000000089f6      0x2e8 build_soccer_game/task_shell.o
+ .debug_abbrev  0x0000000000008cde      0x25f build_soccer_game/task_life.o
+ .debug_abbrev  0x0000000000008f3d      0x36f build_soccer_game/task_fw.o
+ .debug_abbrev  0x00000000000092ac      0x213 build_soccer_game/task_list.o
+ .debug_abbrev  0x00000000000094bf      0x2cb build_soccer_game/task_display.o
+ .debug_abbrev  0x000000000000978a      0x27e build_soccer_game/task_if.o
+ .debug_abbrev  0x0000000000009a08      0x1b7 build_soccer_game/task_rf24_if.o
+ .debug_abbrev  0x0000000000009bbf      0x238 build_soccer_game/task_uart_if.o
+ .debug_abbrev  0x0000000000009df7      0x1b7 build_soccer_game/task_dbg.o
+ .debug_abbrev  0x0000000000009fae      0x425 build_soccer_game/view_render.o
+ .debug_abbrev  0x000000000000a3d3      0x36d build_soccer_game/screen_manager.o
+ .debug_abbrev  0x000000000000a740      0x7cb build_soccer_game/Adafruit_GFX.o
+ .debug_abbrev  0x000000000000af0b      0x570 build_soccer_game/Adafruit_oled_drv.o
+ .debug_abbrev  0x000000000000b47b      0x1ec build_soccer_game/eeprom.o
+ .debug_abbrev  0x000000000000b667      0x266 build_soccer_game/link_hal.o
+ .debug_abbrev  0x000000000000b8cd      0x3cc build_soccer_game/link.o
+ .debug_abbrev  0x000000000000bc99      0x4bc build_soccer_game/link_mac.o
+ .debug_abbrev  0x000000000000c155      0x5c7 build_soccer_game/link_phy.o
+ .debug_abbrev  0x000000000000c71c      0x318 build_soccer_game/link_data.o
+ .debug_abbrev  0x000000000000ca34      0x2a8 build_soccer_game/wiring_digital.o
+ .debug_abbrev  0x000000000000ccdc      0x526 build_soccer_game/Print.o
+ .debug_abbrev  0x000000000000d202      0x2c8 build_soccer_game/WMath.o
+ .debug_abbrev  0x000000000000d4ca      0x52d build_soccer_game/HardwareSerial.o
+ .debug_abbrev  0x000000000000d9f7      0x5a3 build_soccer_game/HardwareSerial2.o
+ .debug_abbrev  0x000000000000df9a      0x39f build_soccer_game/SPI.o
+ .debug_abbrev  0x000000000000e339      0x7a1 build_soccer_game/Wire.o
+ .debug_abbrev  0x000000000000eada      0x47f build_soccer_game/twi.o
+ .debug_abbrev  0x000000000000ef59      0x466 build_soccer_game/mini_cpp.o
+ .debug_abbrev  0x000000000000f3bf      0x3f0 build_soccer_game/ar_striker.o
+ .debug_abbrev  0x000000000000f7af      0x3bf build_soccer_game/ar_keeper.o
+ .debug_abbrev  0x000000000000fb6e      0x418 build_soccer_game/ar_ball.o
+ .debug_abbrev  0x000000000000ff86      0x6b8 build_soccer_game/scr_soccer.o
+ .debug_abbrev  0x000000000001063e      0x3f3 build_soccer_game/task_soccer_game.o
 
-.debug_loc      0x0000000000000000    0x18626
+.debug_loc      0x0000000000000000    0x18629
  .debug_loc     0x0000000000000000       0x4a build_soccer_game/fsm.o
  .debug_loc     0x000000000000004a      0x782 build_soccer_game/task.o
  .debug_loc     0x00000000000007cc      0x379 build_soccer_game/timer.o
@@ -5697,41 +5702,41 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
  .debug_loc     0x000000000000f68a      0x172 build_soccer_game/system_stm32l1xx.o
  .debug_loc     0x000000000000f7fc       0xa6 build_soccer_game/scr_startup.o
  .debug_loc     0x000000000000f8a2      0x17f build_soccer_game/scr_menu.o
- .debug_loc     0x000000000000fa21       0x7c build_soccer_game/scr_score.o
- .debug_loc     0x000000000000fa9d       0x25 build_soccer_game/task_system.o
- .debug_loc     0x000000000000fac2       0x15 build_soccer_game/app.o
- .debug_loc     0x000000000000fad7      0x401 build_soccer_game/app_eeprom.o
- .debug_loc     0x000000000000fed8      0x288 build_soccer_game/app_bsp.o
- .debug_loc     0x0000000000010160      0x275 build_soccer_game/app_modbus_pull.o
- .debug_loc     0x00000000000103d5     0x119a build_soccer_game/shell.o
- .debug_loc     0x000000000001156f       0x61 build_soccer_game/task_shell.o
- .debug_loc     0x00000000000115d0       0x32 build_soccer_game/task_life.o
- .debug_loc     0x0000000000011602      0x433 build_soccer_game/task_fw.o
- .debug_loc     0x0000000000011a35       0x25 build_soccer_game/task_display.o
- .debug_loc     0x0000000000011a5a      0x1bb build_soccer_game/task_if.o
- .debug_loc     0x0000000000011c15       0xf8 build_soccer_game/task_uart_if.o
- .debug_loc     0x0000000000011d0d      0x267 build_soccer_game/view_render.o
- .debug_loc     0x0000000000011f74       0xd3 build_soccer_game/screen_manager.o
- .debug_loc     0x0000000000012047     0x18c8 build_soccer_game/Adafruit_GFX.o
- .debug_loc     0x000000000001390f      0x74a build_soccer_game/Adafruit_oled_drv.o
- .debug_loc     0x0000000000014059      0x128 build_soccer_game/eeprom.o
- .debug_loc     0x0000000000014181       0x6f build_soccer_game/link_hal.o
- .debug_loc     0x00000000000141f0      0x4b2 build_soccer_game/link.o
- .debug_loc     0x00000000000146a2      0x399 build_soccer_game/link_mac.o
- .debug_loc     0x0000000000014a3b      0x4be build_soccer_game/link_phy.o
- .debug_loc     0x0000000000014ef9      0x230 build_soccer_game/link_data.o
- .debug_loc     0x0000000000015129      0x43c build_soccer_game/wiring_digital.o
- .debug_loc     0x0000000000015565     0x13b8 build_soccer_game/Print.o
- .debug_loc     0x000000000001691d      0x164 build_soccer_game/WMath.o
- .debug_loc     0x0000000000016a81      0x1e2 build_soccer_game/HardwareSerial.o
- .debug_loc     0x0000000000016c63       0x84 build_soccer_game/HardwareSerial2.o
- .debug_loc     0x0000000000016ce7      0x538 build_soccer_game/SPI.o
- .debug_loc     0x000000000001721f      0x935 build_soccer_game/Wire.o
- .debug_loc     0x0000000000017b54      0x418 build_soccer_game/twi.o
- .debug_loc     0x0000000000017f6c       0xfd build_soccer_game/mini_cpp.o
- .debug_loc     0x0000000000018069       0x25 build_soccer_game/ar_striker.o
- .debug_loc     0x000000000001808e      0x54e build_soccer_game/scr_soccer.o
- .debug_loc     0x00000000000185dc       0x4a build_soccer_game/task_soccer_game.o
+ .debug_loc     0x000000000000fa21       0x6c build_soccer_game/scr_score.o
+ .debug_loc     0x000000000000fa8d       0x25 build_soccer_game/task_system.o
+ .debug_loc     0x000000000000fab2       0x15 build_soccer_game/app.o
+ .debug_loc     0x000000000000fac7      0x401 build_soccer_game/app_eeprom.o
+ .debug_loc     0x000000000000fec8      0x26e build_soccer_game/app_bsp.o
+ .debug_loc     0x0000000000010136      0x275 build_soccer_game/app_modbus_pull.o
+ .debug_loc     0x00000000000103ab     0x119a build_soccer_game/shell.o
+ .debug_loc     0x0000000000011545       0x61 build_soccer_game/task_shell.o
+ .debug_loc     0x00000000000115a6       0x32 build_soccer_game/task_life.o
+ .debug_loc     0x00000000000115d8      0x433 build_soccer_game/task_fw.o
+ .debug_loc     0x0000000000011a0b       0x25 build_soccer_game/task_display.o
+ .debug_loc     0x0000000000011a30      0x1bb build_soccer_game/task_if.o
+ .debug_loc     0x0000000000011beb       0xf8 build_soccer_game/task_uart_if.o
+ .debug_loc     0x0000000000011ce3      0x267 build_soccer_game/view_render.o
+ .debug_loc     0x0000000000011f4a       0xd3 build_soccer_game/screen_manager.o
+ .debug_loc     0x000000000001201d     0x18c8 build_soccer_game/Adafruit_GFX.o
+ .debug_loc     0x00000000000138e5      0x74a build_soccer_game/Adafruit_oled_drv.o
+ .debug_loc     0x000000000001402f      0x128 build_soccer_game/eeprom.o
+ .debug_loc     0x0000000000014157       0x6f build_soccer_game/link_hal.o
+ .debug_loc     0x00000000000141c6      0x4b2 build_soccer_game/link.o
+ .debug_loc     0x0000000000014678      0x399 build_soccer_game/link_mac.o
+ .debug_loc     0x0000000000014a11      0x4be build_soccer_game/link_phy.o
+ .debug_loc     0x0000000000014ecf      0x230 build_soccer_game/link_data.o
+ .debug_loc     0x00000000000150ff      0x43c build_soccer_game/wiring_digital.o
+ .debug_loc     0x000000000001553b     0x13b8 build_soccer_game/Print.o
+ .debug_loc     0x00000000000168f3      0x164 build_soccer_game/WMath.o
+ .debug_loc     0x0000000000016a57      0x1e2 build_soccer_game/HardwareSerial.o
+ .debug_loc     0x0000000000016c39       0x84 build_soccer_game/HardwareSerial2.o
+ .debug_loc     0x0000000000016cbd      0x538 build_soccer_game/SPI.o
+ .debug_loc     0x00000000000171f5      0x935 build_soccer_game/Wire.o
+ .debug_loc     0x0000000000017b2a      0x418 build_soccer_game/twi.o
+ .debug_loc     0x0000000000017f42       0xfd build_soccer_game/mini_cpp.o
+ .debug_loc     0x000000000001803f       0x25 build_soccer_game/ar_striker.o
+ .debug_loc     0x0000000000018064      0x57b build_soccer_game/scr_soccer.o
+ .debug_loc     0x00000000000185df       0x4a build_soccer_game/task_soccer_game.o
 
 .debug_aranges  0x0000000000000000     0x2528
  .debug_aranges
@@ -5917,7 +5922,7 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
  .debug_aranges
                 0x0000000000002508       0x20 build_soccer_game/task_soccer_game.o
 
-.debug_ranges   0x0000000000000000     0x2c58
+.debug_ranges   0x0000000000000000     0x2c60
  .debug_ranges  0x0000000000000000       0x10 build_soccer_game/fsm.o
  .debug_ranges  0x0000000000000010       0xf0 build_soccer_game/task.o
  .debug_ranges  0x0000000000000100       0x90 build_soccer_game/timer.o
@@ -6002,10 +6007,10 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
  .debug_ranges  0x0000000000002a58       0x18 build_soccer_game/ar_striker.o
  .debug_ranges  0x0000000000002a70       0x10 build_soccer_game/ar_keeper.o
  .debug_ranges  0x0000000000002a80       0x40 build_soccer_game/ar_ball.o
- .debug_ranges  0x0000000000002ac0      0x188 build_soccer_game/scr_soccer.o
- .debug_ranges  0x0000000000002c48       0x10 build_soccer_game/task_soccer_game.o
+ .debug_ranges  0x0000000000002ac0      0x190 build_soccer_game/scr_soccer.o
+ .debug_ranges  0x0000000000002c50       0x10 build_soccer_game/task_soccer_game.o
 
-.debug_line     0x0000000000000000    0x29e2e
+.debug_line     0x0000000000000000    0x29f07
  .debug_line    0x0000000000000000      0x18c build_soccer_game/fsm.o
  .debug_line    0x000000000000018c      0xa2c build_soccer_game/task.o
  .debug_line    0x0000000000000bb8      0x599 build_soccer_game/timer.o
@@ -6053,52 +6058,52 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
  .debug_line    0x0000000000011d13     0x1019 build_soccer_game/io_cfg.o
  .debug_line    0x0000000000012d2c      0x452 build_soccer_game/system_stm32l1xx.o
  .debug_line    0x000000000001317e      0x72c build_soccer_game/scr_startup.o
- .debug_line    0x00000000000138aa      0x824 build_soccer_game/scr_menu.o
- .debug_line    0x00000000000140ce      0x501 build_soccer_game/screens_bitmap.o
- .debug_line    0x00000000000145cf      0x748 build_soccer_game/scr_score.o
- .debug_line    0x0000000000014d17      0x53d build_soccer_game/task_system.o
- .debug_line    0x0000000000015254     0x12cc build_soccer_game/app.o
- .debug_line    0x0000000000016520      0x3e8 build_soccer_game/app_data.o
- .debug_line    0x0000000000016908      0x7bb build_soccer_game/app_eeprom.o
- .debug_line    0x00000000000170c3      0x4cd build_soccer_game/app_non_clear_ram.o
- .debug_line    0x0000000000017590      0x669 build_soccer_game/app_bsp.o
- .debug_line    0x0000000000017bf9      0x6bb build_soccer_game/app_modbus_pull.o
- .debug_line    0x00000000000182b4     0x154e build_soccer_game/shell.o
- .debug_line    0x0000000000019802      0x648 build_soccer_game/task_shell.o
- .debug_line    0x0000000000019e4a      0x568 build_soccer_game/task_life.o
- .debug_line    0x000000000001a3b2      0xb1f build_soccer_game/task_fw.o
- .debug_line    0x000000000001aed1      0x4ee build_soccer_game/task_list.o
- .debug_line    0x000000000001b3bf      0x54f build_soccer_game/task_display.o
- .debug_line    0x000000000001b90e      0x5ce build_soccer_game/task_if.o
- .debug_line    0x000000000001bedc      0x498 build_soccer_game/task_rf24_if.o
- .debug_line    0x000000000001c374      0x5ee build_soccer_game/task_uart_if.o
- .debug_line    0x000000000001c962      0x492 build_soccer_game/task_dbg.o
- .debug_line    0x000000000001cdf4      0x7c1 build_soccer_game/view_render.o
- .debug_line    0x000000000001d5b5      0x6b1 build_soccer_game/screen_manager.o
- .debug_line    0x000000000001dc66     0x14a1 build_soccer_game/Adafruit_GFX.o
- .debug_line    0x000000000001f107      0xb80 build_soccer_game/Adafruit_oled_drv.o
- .debug_line    0x000000000001fc87      0x4c9 build_soccer_game/eeprom.o
- .debug_line    0x0000000000020150      0x5b9 build_soccer_game/link_hal.o
- .debug_line    0x0000000000020709      0x9b3 build_soccer_game/link.o
- .debug_line    0x00000000000210bc      0xbef build_soccer_game/link_mac.o
- .debug_line    0x0000000000021cab      0xd3f build_soccer_game/link_phy.o
- .debug_line    0x00000000000229ea      0x809 build_soccer_game/link_data.o
- .debug_line    0x00000000000231f3      0x6b7 build_soccer_game/wiring_digital.o
- .debug_line    0x00000000000238aa      0xaad build_soccer_game/Print.o
- .debug_line    0x0000000000024357      0x565 build_soccer_game/WMath.o
- .debug_line    0x00000000000248bc      0x6dc build_soccer_game/HardwareSerial.o
- .debug_line    0x0000000000024f98      0x68e build_soccer_game/HardwareSerial2.o
- .debug_line    0x0000000000025626      0x7b1 build_soccer_game/SPI.o
- .debug_line    0x0000000000025dd7      0xabc build_soccer_game/Wire.o
- .debug_line    0x0000000000026893      0x8d0 build_soccer_game/twi.o
- .debug_line    0x0000000000027163      0x68e build_soccer_game/mini_cpp.o
- .debug_line    0x00000000000277f1      0x481 build_soccer_game/ar_striker.o
- .debug_line    0x0000000000027c72      0x492 build_soccer_game/ar_keeper.o
- .debug_line    0x0000000000028104      0x619 build_soccer_game/ar_ball.o
- .debug_line    0x000000000002871d     0x1164 build_soccer_game/scr_soccer.o
- .debug_line    0x0000000000029881      0x5ad build_soccer_game/task_soccer_game.o
+ .debug_line    0x00000000000138aa      0x829 build_soccer_game/scr_menu.o
+ .debug_line    0x00000000000140d3      0x501 build_soccer_game/screens_bitmap.o
+ .debug_line    0x00000000000145d4      0x728 build_soccer_game/scr_score.o
+ .debug_line    0x0000000000014cfc      0x53d build_soccer_game/task_system.o
+ .debug_line    0x0000000000015239     0x12cc build_soccer_game/app.o
+ .debug_line    0x0000000000016505      0x3e8 build_soccer_game/app_data.o
+ .debug_line    0x00000000000168ed      0x7bb build_soccer_game/app_eeprom.o
+ .debug_line    0x00000000000170a8      0x4cd build_soccer_game/app_non_clear_ram.o
+ .debug_line    0x0000000000017575      0x692 build_soccer_game/app_bsp.o
+ .debug_line    0x0000000000017c07      0x6bb build_soccer_game/app_modbus_pull.o
+ .debug_line    0x00000000000182c2     0x154e build_soccer_game/shell.o
+ .debug_line    0x0000000000019810      0x648 build_soccer_game/task_shell.o
+ .debug_line    0x0000000000019e58      0x568 build_soccer_game/task_life.o
+ .debug_line    0x000000000001a3c0      0xb1f build_soccer_game/task_fw.o
+ .debug_line    0x000000000001aedf      0x4ee build_soccer_game/task_list.o
+ .debug_line    0x000000000001b3cd      0x54f build_soccer_game/task_display.o
+ .debug_line    0x000000000001b91c      0x5ce build_soccer_game/task_if.o
+ .debug_line    0x000000000001beea      0x498 build_soccer_game/task_rf24_if.o
+ .debug_line    0x000000000001c382      0x5ee build_soccer_game/task_uart_if.o
+ .debug_line    0x000000000001c970      0x492 build_soccer_game/task_dbg.o
+ .debug_line    0x000000000001ce02      0x7e7 build_soccer_game/view_render.o
+ .debug_line    0x000000000001d5e9      0x6a6 build_soccer_game/screen_manager.o
+ .debug_line    0x000000000001dc8f     0x14a1 build_soccer_game/Adafruit_GFX.o
+ .debug_line    0x000000000001f130      0xb80 build_soccer_game/Adafruit_oled_drv.o
+ .debug_line    0x000000000001fcb0      0x4c9 build_soccer_game/eeprom.o
+ .debug_line    0x0000000000020179      0x5b9 build_soccer_game/link_hal.o
+ .debug_line    0x0000000000020732      0x9b3 build_soccer_game/link.o
+ .debug_line    0x00000000000210e5      0xbef build_soccer_game/link_mac.o
+ .debug_line    0x0000000000021cd4      0xd3f build_soccer_game/link_phy.o
+ .debug_line    0x0000000000022a13      0x809 build_soccer_game/link_data.o
+ .debug_line    0x000000000002321c      0x6b7 build_soccer_game/wiring_digital.o
+ .debug_line    0x00000000000238d3      0xaad build_soccer_game/Print.o
+ .debug_line    0x0000000000024380      0x565 build_soccer_game/WMath.o
+ .debug_line    0x00000000000248e5      0x6dc build_soccer_game/HardwareSerial.o
+ .debug_line    0x0000000000024fc1      0x68e build_soccer_game/HardwareSerial2.o
+ .debug_line    0x000000000002564f      0x7b1 build_soccer_game/SPI.o
+ .debug_line    0x0000000000025e00      0xabc build_soccer_game/Wire.o
+ .debug_line    0x00000000000268bc      0x8d0 build_soccer_game/twi.o
+ .debug_line    0x000000000002718c      0x68e build_soccer_game/mini_cpp.o
+ .debug_line    0x000000000002781a      0x498 build_soccer_game/ar_striker.o
+ .debug_line    0x0000000000027cb2      0x492 build_soccer_game/ar_keeper.o
+ .debug_line    0x0000000000028144      0x619 build_soccer_game/ar_ball.o
+ .debug_line    0x000000000002875d     0x11fd build_soccer_game/scr_soccer.o
+ .debug_line    0x000000000002995a      0x5ad build_soccer_game/task_soccer_game.o
 
-.debug_str      0x0000000000000000    0x14e9f
+.debug_str      0x0000000000000000    0x14f4a
  .debug_str     0x0000000000000000      0x1bf build_soccer_game/fsm.o
                                         0x253 (size before relaxing)
  .debug_str     0x00000000000001bf      0x56b build_soccer_game/task.o
@@ -6119,167 +6124,167 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
                                         0x2bf (size before relaxing)
  .debug_str     0x0000000000001054       0x5d build_soccer_game/cmd_line.o
                                         0x204 (size before relaxing)
- .debug_str     0x00000000000010b1       0xb9 build_soccer_game/button.o
+ .debug_str     0x00000000000010b1       0xb2 build_soccer_game/button.o
                                         0x257 (size before relaxing)
- .debug_str     0x000000000000116a      0x14b build_soccer_game/flash.o
+ .debug_str     0x0000000000001163      0x14b build_soccer_game/flash.o
                                         0x2df (size before relaxing)
- .debug_str     0x00000000000012b5       0x9f build_soccer_game/led.o
+ .debug_str     0x00000000000012ae       0x9f build_soccer_game/led.o
                                         0x248 (size before relaxing)
- .debug_str     0x0000000000001354      0xac1 build_soccer_game/buzzer.o
+ .debug_str     0x000000000000134d      0xac1 build_soccer_game/buzzer.o
                                         0xcff (size before relaxing)
- .debug_str     0x0000000000001e15       0x25 build_soccer_game/buzzer_music.o
+ .debug_str     0x0000000000001e0e       0x25 build_soccer_game/buzzer_music.o
                                         0x2ab (size before relaxing)
- .debug_str     0x0000000000001e3a      0x245 build_soccer_game/sys_dbg.o
+ .debug_str     0x0000000000001e33      0x245 build_soccer_game/sys_dbg.o
                                         0x66a (size before relaxing)
- .debug_str     0x000000000000207f      0x156 build_soccer_game/sys_boot.o
+ .debug_str     0x0000000000002078      0x156 build_soccer_game/sys_boot.o
                                         0x38d (size before relaxing)
- .debug_str     0x00000000000021d5      0x3d4 build_soccer_game/mbutils.o
+ .debug_str     0x00000000000021ce      0x3d4 build_soccer_game/mbutils.o
                                         0x535 (size before relaxing)
- .debug_str     0x00000000000025a9      0x475 build_soccer_game/mbm.o
+ .debug_str     0x00000000000025a2      0x475 build_soccer_game/mbm.o
                                         0x765 (size before relaxing)
- .debug_str     0x0000000000002a1e       0x73 build_soccer_game/mbmcrc.o
+ .debug_str     0x0000000000002a17       0x73 build_soccer_game/mbmcrc.o
                                         0x1d4 (size before relaxing)
- .debug_str     0x0000000000002a91      0x32a build_soccer_game/mbmrtu.o
+ .debug_str     0x0000000000002a8a      0x32a build_soccer_game/mbmrtu.o
                                         0x8c5 (size before relaxing)
- .debug_str     0x0000000000002dbb      0x211 build_soccer_game/mbmfuncholding.o
+ .debug_str     0x0000000000002db4      0x211 build_soccer_game/mbmfuncholding.o
                                         0x6bb (size before relaxing)
- .debug_str     0x0000000000002fcc      0x197 build_soccer_game/mbmfunccoils.o
+ .debug_str     0x0000000000002fc5      0x197 build_soccer_game/mbmfunccoils.o
                                         0x640 (size before relaxing)
- .debug_str     0x0000000000003163       0x94 build_soccer_game/mbmfuncdisc.o
+ .debug_str     0x000000000000315c       0x94 build_soccer_game/mbmfuncdisc.o
                                         0x562 (size before relaxing)
- .debug_str     0x00000000000031f7       0x77 build_soccer_game/mbmfuncinput.o
+ .debug_str     0x00000000000031f0       0x77 build_soccer_game/mbmfuncinput.o
                                         0x55d (size before relaxing)
- .debug_str     0x000000000000326e       0x96 build_soccer_game/mbportevent.o
+ .debug_str     0x0000000000003267       0x96 build_soccer_game/mbportevent.o
                                         0x3e1 (size before relaxing)
- .debug_str     0x0000000000003304       0x9e build_soccer_game/mbportother.o
+ .debug_str     0x00000000000032fd       0x9e build_soccer_game/mbportother.o
                                         0x2b7 (size before relaxing)
- .debug_str     0x00000000000033a2      0x337 build_soccer_game/mbportserial.o
+ .debug_str     0x000000000000339b      0x337 build_soccer_game/mbportserial.o
                                         0x7c1 (size before relaxing)
- .debug_str     0x00000000000036d9      0x10d build_soccer_game/mbporttimer.o
+ .debug_str     0x00000000000036d2      0x10d build_soccer_game/mbporttimer.o
                                         0x9b0 (size before relaxing)
- .debug_str     0x00000000000037e6      0x1a8 build_soccer_game/stm32l1xx_gpio.o
+ .debug_str     0x00000000000037df      0x1a8 build_soccer_game/stm32l1xx_gpio.o
                                         0x505 (size before relaxing)
- .debug_str     0x000000000000398e      0x498 build_soccer_game/stm32l1xx_rcc.o
+ .debug_str     0x0000000000003987      0x498 build_soccer_game/stm32l1xx_rcc.o
                                         0x736 (size before relaxing)
- .debug_str     0x0000000000003e26      0x2ea build_soccer_game/stm32l1xx_usart.o
+ .debug_str     0x0000000000003e1f      0x2ea build_soccer_game/stm32l1xx_usart.o
                                         0x6f6 (size before relaxing)
- .debug_str     0x0000000000004110      0x36a build_soccer_game/stm32l1xx_spi.o
+ .debug_str     0x0000000000004109      0x36a build_soccer_game/stm32l1xx_spi.o
                                         0x663 (size before relaxing)
- .debug_str     0x000000000000447a      0x193 build_soccer_game/misc.o
+ .debug_str     0x0000000000004473      0x193 build_soccer_game/misc.o
                                         0x3f5 (size before relaxing)
- .debug_str     0x000000000000460d      0x1d5 build_soccer_game/stm32l1xx_exti.o
+ .debug_str     0x0000000000004606      0x1d5 build_soccer_game/stm32l1xx_exti.o
                                         0x373 (size before relaxing)
- .debug_str     0x00000000000047e2      0x85c build_soccer_game/stm32l1xx_tim.o
+ .debug_str     0x00000000000047db      0x85c build_soccer_game/stm32l1xx_tim.o
                                         0xc9a (size before relaxing)
- .debug_str     0x000000000000503e      0x61f build_soccer_game/stm32l1xx_adc.o
+ .debug_str     0x0000000000005037      0x61f build_soccer_game/stm32l1xx_adc.o
                                         0x833 (size before relaxing)
- .debug_str     0x000000000000565d      0x1cf build_soccer_game/stm32l1xx_pwr.o
+ .debug_str     0x0000000000005656      0x1cf build_soccer_game/stm32l1xx_pwr.o
                                         0x40f (size before relaxing)
- .debug_str     0x000000000000582c      0x617 build_soccer_game/stm32l1xx_flash.o
+ .debug_str     0x0000000000005825      0x617 build_soccer_game/stm32l1xx_flash.o
                                         0x808 (size before relaxing)
- .debug_str     0x0000000000005e43       0xf0 build_soccer_game/stm32l1xx_iwdg.o
+ .debug_str     0x0000000000005e3c       0xf0 build_soccer_game/stm32l1xx_iwdg.o
                                         0x293 (size before relaxing)
- .debug_str     0x0000000000005f33      0x3ae build_soccer_game/stm32l1xx_i2c.o
+ .debug_str     0x0000000000005f2c      0x3ae build_soccer_game/stm32l1xx_i2c.o
                                         0x6b5 (size before relaxing)
- .debug_str     0x00000000000062e1       0x70 build_soccer_game/platform.o
+ .debug_str     0x00000000000062da       0x70 build_soccer_game/platform.o
                                         0x259 (size before relaxing)
- .debug_str     0x0000000000006351      0x3a0 build_soccer_game/system.o
+ .debug_str     0x000000000000634a      0x3a0 build_soccer_game/system.o
                                         0x885 (size before relaxing)
- .debug_str     0x00000000000066f1      0x3dd build_soccer_game/sys_cfg.o
+ .debug_str     0x00000000000066ea      0x3dd build_soccer_game/sys_cfg.o
                                        0x1321 (size before relaxing)
- .debug_str     0x0000000000006ace      0x428 build_soccer_game/io_cfg.o
+ .debug_str     0x0000000000006ac7      0x428 build_soccer_game/io_cfg.o
                                        0x1492 (size before relaxing)
- .debug_str     0x0000000000006ef6       0x37 build_soccer_game/system_stm32l1xx.o
+ .debug_str     0x0000000000006eef       0x37 build_soccer_game/system_stm32l1xx.o
                                         0x36f (size before relaxing)
- .debug_str     0x0000000000006f2d     0x108f build_soccer_game/scr_startup.o
-                                       0x14ac (size before relaxing)
- .debug_str     0x0000000000007fbc      0x537 build_soccer_game/scr_menu.o
-                                       0x185e (size before relaxing)
- .debug_str     0x00000000000084f3      0x162 build_soccer_game/screens_bitmap.o
+ .debug_str     0x0000000000006f26     0x111c build_soccer_game/scr_startup.o
+                                       0x1539 (size before relaxing)
+ .debug_str     0x0000000000008042      0x537 build_soccer_game/scr_menu.o
+                                       0x18eb (size before relaxing)
+ .debug_str     0x0000000000008579      0x162 build_soccer_game/screens_bitmap.o
                                         0xedd (size before relaxing)
- .debug_str     0x0000000000008655       0xcf build_soccer_game/scr_score.o
-                                       0x14d9 (size before relaxing)
- .debug_str     0x0000000000008724       0xa8 build_soccer_game/task_system.o
+ .debug_str     0x00000000000086db       0xcf build_soccer_game/scr_score.o
+                                       0x1566 (size before relaxing)
+ .debug_str     0x00000000000087aa       0xa8 build_soccer_game/task_system.o
                                         0x5cc (size before relaxing)
- .debug_str     0x00000000000087cc     0x69a9 build_soccer_game/app.o
-                                       0x8b56 (size before relaxing)
- .debug_str     0x000000000000f175       0x19 build_soccer_game/app_data.o
+ .debug_str     0x0000000000008852     0x69a9 build_soccer_game/app.o
+                                       0x8be3 (size before relaxing)
+ .debug_str     0x000000000000f1fb       0x19 build_soccer_game/app_data.o
                                         0x3b0 (size before relaxing)
- .debug_str     0x000000000000f18e      0x173 build_soccer_game/app_eeprom.o
+ .debug_str     0x000000000000f214      0x173 build_soccer_game/app_eeprom.o
                                         0x674 (size before relaxing)
- .debug_str     0x000000000000f301       0x22 build_soccer_game/app_non_clear_ram.o
+ .debug_str     0x000000000000f387       0x22 build_soccer_game/app_non_clear_ram.o
                                         0x3d0 (size before relaxing)
- .debug_str     0x000000000000f323       0x97 build_soccer_game/app_bsp.o
-                                        0x8a4 (size before relaxing)
- .debug_str     0x000000000000f3ba      0x3f9 build_soccer_game/app_modbus_pull.o
+ .debug_str     0x000000000000f3a9       0xa3 build_soccer_game/app_bsp.o
+                                        0x93d (size before relaxing)
+ .debug_str     0x000000000000f44c      0x3f9 build_soccer_game/app_modbus_pull.o
                                         0x9b2 (size before relaxing)
- .debug_str     0x000000000000f7b3      0x41d build_soccer_game/shell.o
+ .debug_str     0x000000000000f845      0x41d build_soccer_game/shell.o
                                        0x1c3f (size before relaxing)
- .debug_str     0x000000000000fbd0       0x49 build_soccer_game/task_shell.o
+ .debug_str     0x000000000000fc62       0x49 build_soccer_game/task_shell.o
                                         0x69e (size before relaxing)
- .debug_str     0x000000000000fc19       0x3b build_soccer_game/task_life.o
+ .debug_str     0x000000000000fcab       0x3b build_soccer_game/task_life.o
                                         0x556 (size before relaxing)
- .debug_str     0x000000000000fc54      0x356 build_soccer_game/task_fw.o
-                                        0xfc0 (size before relaxing)
- .debug_str     0x000000000000ffaa       0xd4 build_soccer_game/task_list.o
+ .debug_str     0x000000000000fce6      0x356 build_soccer_game/task_fw.o
+                                       0x104d (size before relaxing)
+ .debug_str     0x000000000001003c       0xd4 build_soccer_game/task_list.o
                                         0x6fb (size before relaxing)
- .debug_str     0x000000000001007e       0x75 build_soccer_game/task_display.o
+ .debug_str     0x0000000000010110       0x75 build_soccer_game/task_display.o
                                         0xed4 (size before relaxing)
- .debug_str     0x00000000000100f3       0x67 build_soccer_game/task_if.o
+ .debug_str     0x0000000000010185       0x67 build_soccer_game/task_if.o
                                         0x6ed (size before relaxing)
- .debug_str     0x000000000001015a       0x45 build_soccer_game/task_rf24_if.o
+ .debug_str     0x00000000000101ec       0x45 build_soccer_game/task_rf24_if.o
                                         0x42b (size before relaxing)
- .debug_str     0x000000000001019f      0x14a build_soccer_game/task_uart_if.o
+ .debug_str     0x0000000000010231      0x14a build_soccer_game/task_uart_if.o
                                         0x769 (size before relaxing)
- .debug_str     0x00000000000102e9       0x38 build_soccer_game/task_dbg.o
+ .debug_str     0x000000000001037b       0x38 build_soccer_game/task_dbg.o
                                         0x41e (size before relaxing)
- .debug_str     0x0000000000010321      0x1fd build_soccer_game/view_render.o
-                                       0x1158 (size before relaxing)
- .debug_str     0x000000000001051e       0xa9 build_soccer_game/screen_manager.o
+ .debug_str     0x00000000000103b3      0x1fd build_soccer_game/view_render.o
+                                       0x1160 (size before relaxing)
+ .debug_str     0x00000000000105b0       0xa9 build_soccer_game/screen_manager.o
                                        0x10c0 (size before relaxing)
- .debug_str     0x00000000000105c7      0x78c build_soccer_game/Adafruit_GFX.o
+ .debug_str     0x0000000000010659      0x78c build_soccer_game/Adafruit_GFX.o
                                        0x197f (size before relaxing)
- .debug_str     0x0000000000010d53      0x641 build_soccer_game/Adafruit_oled_drv.o
+ .debug_str     0x0000000000010de5      0x641 build_soccer_game/Adafruit_oled_drv.o
                                        0x160e (size before relaxing)
- .debug_str     0x0000000000011394       0x21 build_soccer_game/eeprom.o
+ .debug_str     0x0000000000011426       0x21 build_soccer_game/eeprom.o
                                         0x3b4 (size before relaxing)
- .debug_str     0x00000000000113b5       0xdd build_soccer_game/link_hal.o
+ .debug_str     0x0000000000011447       0xdd build_soccer_game/link_hal.o
                                         0x500 (size before relaxing)
- .debug_str     0x0000000000011492      0x3e4 build_soccer_game/link.o
+ .debug_str     0x0000000000011524      0x3e4 build_soccer_game/link.o
                                         0xcd3 (size before relaxing)
- .debug_str     0x0000000000011876      0x556 build_soccer_game/link_mac.o
+ .debug_str     0x0000000000011908      0x556 build_soccer_game/link_mac.o
                                         0xf7f (size before relaxing)
- .debug_str     0x0000000000011dcc      0x46a build_soccer_game/link_phy.o
+ .debug_str     0x0000000000011e5e      0x46a build_soccer_game/link_phy.o
                                         0xe42 (size before relaxing)
- .debug_str     0x0000000000012236       0xe9 build_soccer_game/link_data.o
+ .debug_str     0x00000000000122c8       0xe9 build_soccer_game/link_data.o
                                         0x605 (size before relaxing)
- .debug_str     0x000000000001231f       0x56 build_soccer_game/wiring_digital.o
+ .debug_str     0x00000000000123b1       0x56 build_soccer_game/wiring_digital.o
                                         0xed6 (size before relaxing)
- .debug_str     0x0000000000012375      0x330 build_soccer_game/Print.o
+ .debug_str     0x0000000000012407      0x330 build_soccer_game/Print.o
                                        0x10aa (size before relaxing)
- .debug_str     0x00000000000126a5       0xcc build_soccer_game/WMath.o
+ .debug_str     0x0000000000012737       0xcc build_soccer_game/WMath.o
                                         0xd8d (size before relaxing)
- .debug_str     0x0000000000012771     0x112f build_soccer_game/HardwareSerial.o
+ .debug_str     0x0000000000012803     0x112f build_soccer_game/HardwareSerial.o
                                        0x1f7f (size before relaxing)
- .debug_str     0x00000000000138a0       0xc1 build_soccer_game/HardwareSerial2.o
+ .debug_str     0x0000000000013932       0xc1 build_soccer_game/HardwareSerial2.o
                                        0x1fb7 (size before relaxing)
- .debug_str     0x0000000000013961      0x104 build_soccer_game/SPI.o
+ .debug_str     0x00000000000139f3      0x104 build_soccer_game/SPI.o
                                         0x9d9 (size before relaxing)
- .debug_str     0x0000000000013a65      0x6d5 build_soccer_game/Wire.o
+ .debug_str     0x0000000000013af7      0x6d5 build_soccer_game/Wire.o
                                        0x24c2 (size before relaxing)
- .debug_str     0x000000000001413a       0xee build_soccer_game/twi.o
+ .debug_str     0x00000000000141cc       0xee build_soccer_game/twi.o
                                        0x1402 (size before relaxing)
- .debug_str     0x0000000000014228      0x168 build_soccer_game/mini_cpp.o
+ .debug_str     0x00000000000142ba      0x168 build_soccer_game/mini_cpp.o
                                         0x978 (size before relaxing)
- .debug_str     0x0000000000014390      0x27a build_soccer_game/ar_striker.o
-                                       0x1329 (size before relaxing)
- .debug_str     0x000000000001460a       0x71 build_soccer_game/ar_keeper.o
-                                       0x12d2 (size before relaxing)
- .debug_str     0x000000000001467b      0x243 build_soccer_game/ar_ball.o
-                                       0x14a4 (size before relaxing)
- .debug_str     0x00000000000148be      0x3de build_soccer_game/scr_soccer.o
-                                       0x22da (size before relaxing)
- .debug_str     0x0000000000014c9c      0x203 build_soccer_game/task_soccer_game.o
+ .debug_str     0x0000000000014422      0x293 build_soccer_game/ar_striker.o
+                                       0x1342 (size before relaxing)
+ .debug_str     0x00000000000146b5       0x71 build_soccer_game/ar_keeper.o
+                                       0x12eb (size before relaxing)
+ .debug_str     0x0000000000014726      0x243 build_soccer_game/ar_ball.o
+                                       0x14bd (size before relaxing)
+ .debug_str     0x0000000000014969      0x3de build_soccer_game/scr_soccer.o
+                                       0x2380 (size before relaxing)
+ .debug_str     0x0000000000014d47      0x203 build_soccer_game/task_soccer_game.o
                                        0x139c (size before relaxing)
 
 .comment        0x0000000000000000       0x49
@@ -6617,7 +6622,7 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
  .ARM.attributes
                 0x000000000000141a       0x1d /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
 
-.debug_frame    0x0000000000000000     0x6508
+.debug_frame    0x0000000000000000     0x64ec
  .debug_frame   0x0000000000000000       0x20 build_soccer_game/fsm.o
  .debug_frame   0x0000000000000020      0x240 build_soccer_game/task.o
  .debug_frame   0x0000000000000260       0xf0 build_soccer_game/timer.o
@@ -6665,66 +6670,66 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
  .debug_frame   0x0000000000003bc0       0x40 build_soccer_game/system_stm32l1xx.o
  .debug_frame   0x0000000000003c00       0x68 build_soccer_game/scr_startup.o
  .debug_frame   0x0000000000003c68       0x84 build_soccer_game/scr_menu.o
- .debug_frame   0x0000000000003cec       0x60 build_soccer_game/scr_score.o
- .debug_frame   0x0000000000003d4c       0x2c build_soccer_game/task_system.o
- .debug_frame   0x0000000000003d78       0x94 build_soccer_game/app.o
- .debug_frame   0x0000000000003e0c       0xac build_soccer_game/app_eeprom.o
- .debug_frame   0x0000000000003eb8       0x88 build_soccer_game/app_bsp.o
- .debug_frame   0x0000000000003f40       0x3c build_soccer_game/app_modbus_pull.o
- .debug_frame   0x0000000000003f7c      0x24c build_soccer_game/shell.o
- .debug_frame   0x00000000000041c8       0x54 build_soccer_game/task_shell.o
- .debug_frame   0x000000000000421c       0x30 build_soccer_game/task_life.o
- .debug_frame   0x000000000000424c       0x88 build_soccer_game/task_fw.o
- .debug_frame   0x00000000000042d4       0x20 build_soccer_game/task_display.o
- .debug_frame   0x00000000000042f4       0x30 build_soccer_game/task_if.o
- .debug_frame   0x0000000000004324       0x20 build_soccer_game/task_rf24_if.o
- .debug_frame   0x0000000000004344       0x38 build_soccer_game/task_uart_if.o
- .debug_frame   0x000000000000437c       0x20 build_soccer_game/task_dbg.o
- .debug_frame   0x000000000000439c       0xb8 build_soccer_game/view_render.o
- .debug_frame   0x0000000000004454       0x94 build_soccer_game/screen_manager.o
- .debug_frame   0x00000000000044e8      0x400 build_soccer_game/Adafruit_GFX.o
- .debug_frame   0x00000000000048e8      0x1d8 build_soccer_game/Adafruit_oled_drv.o
- .debug_frame   0x0000000000004ac0       0x40 build_soccer_game/eeprom.o
- .debug_frame   0x0000000000004b00       0x68 build_soccer_game/link_hal.o
- .debug_frame   0x0000000000004b68       0xa0 build_soccer_game/link.o
- .debug_frame   0x0000000000004c08       0xf4 build_soccer_game/link_mac.o
- .debug_frame   0x0000000000004cfc      0x164 build_soccer_game/link_phy.o
- .debug_frame   0x0000000000004e60      0x108 build_soccer_game/link_data.o
- .debug_frame   0x0000000000004f68       0xe0 build_soccer_game/wiring_digital.o
- .debug_frame   0x0000000000005048      0x2a0 build_soccer_game/Print.o
- .debug_frame   0x00000000000052e8       0x88 build_soccer_game/WMath.o
- .debug_frame   0x0000000000005370       0xbc build_soccer_game/HardwareSerial.o
- .debug_frame   0x000000000000542c       0x4c build_soccer_game/HardwareSerial2.o
- .debug_frame   0x0000000000005478      0x164 build_soccer_game/SPI.o
- .debug_frame   0x00000000000055dc      0x21c build_soccer_game/Wire.o
- .debug_frame   0x00000000000057f8      0x118 build_soccer_game/twi.o
- .debug_frame   0x0000000000005910      0x100 build_soccer_game/mini_cpp.o
- .debug_frame   0x0000000000005a10       0x30 build_soccer_game/ar_striker.o
- .debug_frame   0x0000000000005a40       0x28 build_soccer_game/ar_keeper.o
- .debug_frame   0x0000000000005a68       0xa8 build_soccer_game/ar_ball.o
- .debug_frame   0x0000000000005b10      0x288 build_soccer_game/scr_soccer.o
- .debug_frame   0x0000000000005d98       0x70 build_soccer_game/task_soccer_game.o
- .debug_frame   0x0000000000005e08       0x30 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-malloc.o)
- .debug_frame   0x0000000000005e38       0x4c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mallocr.o)
- .debug_frame   0x0000000000005e84       0x28 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memcmp.o)
- .debug_frame   0x0000000000005eac       0x2c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memset.o)
- .debug_frame   0x0000000000005ed8       0x30 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mlock.o)
- .debug_frame   0x0000000000005f08       0x3c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-rand.o)
- .debug_frame   0x0000000000005f44       0x2c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-sbrkr.o)
- .debug_frame   0x0000000000005f70       0x34 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strcmp.o)
- .debug_frame   0x0000000000005fa4       0x20 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strcpy.o)
- .debug_frame   0x0000000000005fc4       0x20 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strlen-stub.o)
- .debug_frame   0x0000000000005fe4       0x90 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strtol.o)
- .debug_frame   0x0000000000006074       0x20 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-errno.o)
- .debug_frame   0x0000000000006094       0x8c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-freer.o)
- .debug_frame   0x0000000000006120       0xb0 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-lock.o)
- .debug_frame   0x00000000000061d0       0x64 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-reent.o)
- .debug_frame   0x0000000000006234       0xac /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00000000000062e0       0x50 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x0000000000006330       0xc4 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00000000000063f4       0x20 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x0000000000006414       0x24 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
- .debug_frame   0x0000000000006438       0x24 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
- .debug_frame   0x000000000000645c       0x4c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
- .debug_frame   0x00000000000064a8       0x2c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00000000000064d4       0x34 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x0000000000003cec       0x58 build_soccer_game/scr_score.o
+ .debug_frame   0x0000000000003d44       0x2c build_soccer_game/task_system.o
+ .debug_frame   0x0000000000003d70       0x94 build_soccer_game/app.o
+ .debug_frame   0x0000000000003e04       0xac build_soccer_game/app_eeprom.o
+ .debug_frame   0x0000000000003eb0       0x70 build_soccer_game/app_bsp.o
+ .debug_frame   0x0000000000003f20       0x3c build_soccer_game/app_modbus_pull.o
+ .debug_frame   0x0000000000003f5c      0x24c build_soccer_game/shell.o
+ .debug_frame   0x00000000000041a8       0x54 build_soccer_game/task_shell.o
+ .debug_frame   0x00000000000041fc       0x30 build_soccer_game/task_life.o
+ .debug_frame   0x000000000000422c       0x88 build_soccer_game/task_fw.o
+ .debug_frame   0x00000000000042b4       0x20 build_soccer_game/task_display.o
+ .debug_frame   0x00000000000042d4       0x30 build_soccer_game/task_if.o
+ .debug_frame   0x0000000000004304       0x20 build_soccer_game/task_rf24_if.o
+ .debug_frame   0x0000000000004324       0x38 build_soccer_game/task_uart_if.o
+ .debug_frame   0x000000000000435c       0x20 build_soccer_game/task_dbg.o
+ .debug_frame   0x000000000000437c       0xb8 build_soccer_game/view_render.o
+ .debug_frame   0x0000000000004434       0x94 build_soccer_game/screen_manager.o
+ .debug_frame   0x00000000000044c8      0x400 build_soccer_game/Adafruit_GFX.o
+ .debug_frame   0x00000000000048c8      0x1d8 build_soccer_game/Adafruit_oled_drv.o
+ .debug_frame   0x0000000000004aa0       0x40 build_soccer_game/eeprom.o
+ .debug_frame   0x0000000000004ae0       0x68 build_soccer_game/link_hal.o
+ .debug_frame   0x0000000000004b48       0xa0 build_soccer_game/link.o
+ .debug_frame   0x0000000000004be8       0xf4 build_soccer_game/link_mac.o
+ .debug_frame   0x0000000000004cdc      0x164 build_soccer_game/link_phy.o
+ .debug_frame   0x0000000000004e40      0x108 build_soccer_game/link_data.o
+ .debug_frame   0x0000000000004f48       0xe0 build_soccer_game/wiring_digital.o
+ .debug_frame   0x0000000000005028      0x2a0 build_soccer_game/Print.o
+ .debug_frame   0x00000000000052c8       0x88 build_soccer_game/WMath.o
+ .debug_frame   0x0000000000005350       0xbc build_soccer_game/HardwareSerial.o
+ .debug_frame   0x000000000000540c       0x4c build_soccer_game/HardwareSerial2.o
+ .debug_frame   0x0000000000005458      0x164 build_soccer_game/SPI.o
+ .debug_frame   0x00000000000055bc      0x21c build_soccer_game/Wire.o
+ .debug_frame   0x00000000000057d8      0x118 build_soccer_game/twi.o
+ .debug_frame   0x00000000000058f0      0x100 build_soccer_game/mini_cpp.o
+ .debug_frame   0x00000000000059f0       0x30 build_soccer_game/ar_striker.o
+ .debug_frame   0x0000000000005a20       0x28 build_soccer_game/ar_keeper.o
+ .debug_frame   0x0000000000005a48       0xa8 build_soccer_game/ar_ball.o
+ .debug_frame   0x0000000000005af0      0x28c build_soccer_game/scr_soccer.o
+ .debug_frame   0x0000000000005d7c       0x70 build_soccer_game/task_soccer_game.o
+ .debug_frame   0x0000000000005dec       0x30 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-malloc.o)
+ .debug_frame   0x0000000000005e1c       0x4c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mallocr.o)
+ .debug_frame   0x0000000000005e68       0x28 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memcmp.o)
+ .debug_frame   0x0000000000005e90       0x2c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memset.o)
+ .debug_frame   0x0000000000005ebc       0x30 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mlock.o)
+ .debug_frame   0x0000000000005eec       0x3c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-rand.o)
+ .debug_frame   0x0000000000005f28       0x2c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000005f54       0x34 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strcmp.o)
+ .debug_frame   0x0000000000005f88       0x20 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strcpy.o)
+ .debug_frame   0x0000000000005fa8       0x20 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strlen-stub.o)
+ .debug_frame   0x0000000000005fc8       0x90 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strtol.o)
+ .debug_frame   0x0000000000006058       0x20 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-errno.o)
+ .debug_frame   0x0000000000006078       0x8c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-freer.o)
+ .debug_frame   0x0000000000006104       0xb0 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-lock.o)
+ .debug_frame   0x00000000000061b4       0x64 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-reent.o)
+ .debug_frame   0x0000000000006218       0xac /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00000000000062c4       0x50 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000000000006314       0xc4 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00000000000063d8       0x20 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x00000000000063f8       0x24 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x000000000000641c       0x24 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_frame   0x0000000000006440       0x4c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_frame   0x000000000000648c       0x2c /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00000000000064b8       0x34 /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)

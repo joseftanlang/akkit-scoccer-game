@@ -102,4 +102,5 @@ build_soccer_game/view_render.o: sources/common/view_render.cpp \
  sources/platform/stm32l/arduino/cores/WString.h \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/ctype.h \
  sources/platform/stm32l/arduino/cores/stm32/pgmspace.h \
- /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/inttypes.h
+ /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/inttypes.h \
+ sources/app/app_dbg.h

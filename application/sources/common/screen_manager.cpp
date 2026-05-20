@@ -55,7 +55,7 @@ void scr_mng_tran(screen_f target,  view_screen_t* scr_obj) {
 
 	/* entry new screen */
 	screen_manager->screen(&screen_msg_entry);
-	view_render_screen(view_screen);
+	// view_render_screen(view_screen);
 }
 
 void scr_mng_contain_screen_none_update_mark() {
