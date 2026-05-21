@@ -9,8 +9,8 @@
 # Utilitis define
 Print = @echo "~"
 
-# Name of build target ex: Zomwar-application.bin
-NAME_MODULE = Zomwar-application
+# Name of build target ex: Soccer_game-application.bin
+NAME_MODULE = Soccer_game
 PROJECT = $(NAME_MODULE)
 
 GCC_PATH		= /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10

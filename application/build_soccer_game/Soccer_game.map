@@ -5469,7 +5469,7 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
 LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libg.a
 LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a
 
-.debug_info     0x0000000000000000    0x729a5
+.debug_info     0x0000000000000000    0x729a4
  .debug_info    0x0000000000000000      0x226 build_soccer_game/fsm.o
  .debug_info    0x0000000000000226      0xeae build_soccer_game/task.o
  .debug_info    0x00000000000010d4      0x822 build_soccer_game/timer.o
@@ -5518,49 +5518,49 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
  .debug_info    0x000000000001b20b      0x5db build_soccer_game/system_stm32l1xx.o
  .debug_info    0x000000000001b7e6     0x23d8 build_soccer_game/scr_startup.o
  .debug_info    0x000000000001dbbe     0x2723 build_soccer_game/scr_menu.o
- .debug_info    0x00000000000202e1     0x20a2 build_soccer_game/screens_bitmap.o
- .debug_info    0x0000000000022383     0x243a build_soccer_game/scr_score.o
- .debug_info    0x00000000000247bd      0xaf3 build_soccer_game/task_system.o
- .debug_info    0x00000000000252b0     0x836c build_soccer_game/app.o
- .debug_info    0x000000000002d61c      0x80c build_soccer_game/app_data.o
- .debug_info    0x000000000002de28      0xee2 build_soccer_game/app_eeprom.o
- .debug_info    0x000000000002ed0a      0x818 build_soccer_game/app_non_clear_ram.o
- .debug_info    0x000000000002f522      0xc55 build_soccer_game/app_bsp.o
- .debug_info    0x0000000000030177      0xd5d build_soccer_game/app_modbus_pull.o
- .debug_info    0x0000000000030ed4     0x48a5 build_soccer_game/shell.o
- .debug_info    0x0000000000035779      0xc9c build_soccer_game/task_shell.o
- .debug_info    0x0000000000036415      0xa49 build_soccer_game/task_life.o
- .debug_info    0x0000000000036e5e     0x16d1 build_soccer_game/task_fw.o
- .debug_info    0x000000000003852f      0xb0a build_soccer_game/task_list.o
- .debug_info    0x0000000000039039     0x2000 build_soccer_game/task_display.o
- .debug_info    0x000000000003b039      0xb47 build_soccer_game/task_if.o
- .debug_info    0x000000000003bb80      0x8b2 build_soccer_game/task_rf24_if.o
- .debug_info    0x000000000003c432      0xb51 build_soccer_game/task_uart_if.o
- .debug_info    0x000000000003cf83      0x8b2 build_soccer_game/task_dbg.o
- .debug_info    0x000000000003d835     0x2453 build_soccer_game/view_render.o
- .debug_info    0x000000000003fc88     0x21c1 build_soccer_game/screen_manager.o
- .debug_info    0x0000000000041e49     0x45cb build_soccer_game/Adafruit_GFX.o
- .debug_info    0x0000000000046414     0x2fc7 build_soccer_game/Adafruit_oled_drv.o
- .debug_info    0x00000000000493db      0x908 build_soccer_game/eeprom.o
- .debug_info    0x0000000000049ce3      0x995 build_soccer_game/link_hal.o
- .debug_info    0x000000000004a678     0x1490 build_soccer_game/link.o
- .debug_info    0x000000000004bb08     0x17c1 build_soccer_game/link_mac.o
- .debug_info    0x000000000004d2c9     0x153c build_soccer_game/link_phy.o
- .debug_info    0x000000000004e805      0xcd7 build_soccer_game/link_data.o
- .debug_info    0x000000000004f4dc     0x2003 build_soccer_game/wiring_digital.o
- .debug_info    0x00000000000514df     0x33d9 build_soccer_game/Print.o
- .debug_info    0x00000000000548b8     0x1f24 build_soccer_game/WMath.o
- .debug_info    0x00000000000567dc     0x386b build_soccer_game/HardwareSerial.o
- .debug_info    0x000000000005a047     0x38e0 build_soccer_game/HardwareSerial2.o
- .debug_info    0x000000000005d927      0xfb7 build_soccer_game/SPI.o
- .debug_info    0x000000000005e8de     0x4503 build_soccer_game/Wire.o
- .debug_info    0x0000000000062de1     0x2958 build_soccer_game/twi.o
- .debug_info    0x0000000000065739     0x138f build_soccer_game/mini_cpp.o
- .debug_info    0x0000000000066ac8     0x2222 build_soccer_game/ar_striker.o
- .debug_info    0x0000000000068cea     0x21fc build_soccer_game/ar_keeper.o
- .debug_info    0x000000000006aee6     0x233c build_soccer_game/ar_ball.o
- .debug_info    0x000000000006d222     0x3539 build_soccer_game/scr_soccer.o
- .debug_info    0x000000000007075b     0x224a build_soccer_game/task_soccer_game.o
+ .debug_info    0x00000000000202e1     0x20a1 build_soccer_game/screens_bitmap.o
+ .debug_info    0x0000000000022382     0x243a build_soccer_game/scr_score.o
+ .debug_info    0x00000000000247bc      0xaf3 build_soccer_game/task_system.o
+ .debug_info    0x00000000000252af     0x836c build_soccer_game/app.o
+ .debug_info    0x000000000002d61b      0x80c build_soccer_game/app_data.o
+ .debug_info    0x000000000002de27      0xee2 build_soccer_game/app_eeprom.o
+ .debug_info    0x000000000002ed09      0x818 build_soccer_game/app_non_clear_ram.o
+ .debug_info    0x000000000002f521      0xc55 build_soccer_game/app_bsp.o
+ .debug_info    0x0000000000030176      0xd5d build_soccer_game/app_modbus_pull.o
+ .debug_info    0x0000000000030ed3     0x48a5 build_soccer_game/shell.o
+ .debug_info    0x0000000000035778      0xc9c build_soccer_game/task_shell.o
+ .debug_info    0x0000000000036414      0xa49 build_soccer_game/task_life.o
+ .debug_info    0x0000000000036e5d     0x16d1 build_soccer_game/task_fw.o
+ .debug_info    0x000000000003852e      0xb0a build_soccer_game/task_list.o
+ .debug_info    0x0000000000039038     0x2000 build_soccer_game/task_display.o
+ .debug_info    0x000000000003b038      0xb47 build_soccer_game/task_if.o
+ .debug_info    0x000000000003bb7f      0x8b2 build_soccer_game/task_rf24_if.o
+ .debug_info    0x000000000003c431      0xb51 build_soccer_game/task_uart_if.o
+ .debug_info    0x000000000003cf82      0x8b2 build_soccer_game/task_dbg.o
+ .debug_info    0x000000000003d834     0x2453 build_soccer_game/view_render.o
+ .debug_info    0x000000000003fc87     0x21c1 build_soccer_game/screen_manager.o
+ .debug_info    0x0000000000041e48     0x45cb build_soccer_game/Adafruit_GFX.o
+ .debug_info    0x0000000000046413     0x2fc7 build_soccer_game/Adafruit_oled_drv.o
+ .debug_info    0x00000000000493da      0x908 build_soccer_game/eeprom.o
+ .debug_info    0x0000000000049ce2      0x995 build_soccer_game/link_hal.o
+ .debug_info    0x000000000004a677     0x1490 build_soccer_game/link.o
+ .debug_info    0x000000000004bb07     0x17c1 build_soccer_game/link_mac.o
+ .debug_info    0x000000000004d2c8     0x153c build_soccer_game/link_phy.o
+ .debug_info    0x000000000004e804      0xcd7 build_soccer_game/link_data.o
+ .debug_info    0x000000000004f4db     0x2003 build_soccer_game/wiring_digital.o
+ .debug_info    0x00000000000514de     0x33d9 build_soccer_game/Print.o
+ .debug_info    0x00000000000548b7     0x1f24 build_soccer_game/WMath.o
+ .debug_info    0x00000000000567db     0x386b build_soccer_game/HardwareSerial.o
+ .debug_info    0x000000000005a046     0x38e0 build_soccer_game/HardwareSerial2.o
+ .debug_info    0x000000000005d926      0xfb7 build_soccer_game/SPI.o
+ .debug_info    0x000000000005e8dd     0x4503 build_soccer_game/Wire.o
+ .debug_info    0x0000000000062de0     0x2958 build_soccer_game/twi.o
+ .debug_info    0x0000000000065738     0x138f build_soccer_game/mini_cpp.o
+ .debug_info    0x0000000000066ac7     0x2222 build_soccer_game/ar_striker.o
+ .debug_info    0x0000000000068ce9     0x21fc build_soccer_game/ar_keeper.o
+ .debug_info    0x000000000006aee5     0x233c build_soccer_game/ar_ball.o
+ .debug_info    0x000000000006d221     0x3539 build_soccer_game/scr_soccer.o
+ .debug_info    0x000000000007075a     0x224a build_soccer_game/task_soccer_game.o
 
 .debug_abbrev   0x0000000000000000    0x10a31
  .debug_abbrev  0x0000000000000000       0xdc build_soccer_game/fsm.o
@@ -6010,7 +6010,7 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
  .debug_ranges  0x0000000000002ac0      0x190 build_soccer_game/scr_soccer.o
  .debug_ranges  0x0000000000002c50       0x10 build_soccer_game/task_soccer_game.o
 
-.debug_line     0x0000000000000000    0x29f07
+.debug_line     0x0000000000000000    0x29ed9
  .debug_line    0x0000000000000000      0x18c build_soccer_game/fsm.o
  .debug_line    0x000000000000018c      0xa2c build_soccer_game/task.o
  .debug_line    0x0000000000000bb8      0x599 build_soccer_game/timer.o
@@ -6057,51 +6057,51 @@ LOAD /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-n
  .debug_line    0x000000000001103c      0xcd7 build_soccer_game/sys_cfg.o
  .debug_line    0x0000000000011d13     0x1019 build_soccer_game/io_cfg.o
  .debug_line    0x0000000000012d2c      0x452 build_soccer_game/system_stm32l1xx.o
- .debug_line    0x000000000001317e      0x72c build_soccer_game/scr_startup.o
- .debug_line    0x00000000000138aa      0x829 build_soccer_game/scr_menu.o
- .debug_line    0x00000000000140d3      0x501 build_soccer_game/screens_bitmap.o
- .debug_line    0x00000000000145d4      0x728 build_soccer_game/scr_score.o
- .debug_line    0x0000000000014cfc      0x53d build_soccer_game/task_system.o
- .debug_line    0x0000000000015239     0x12cc build_soccer_game/app.o
- .debug_line    0x0000000000016505      0x3e8 build_soccer_game/app_data.o
- .debug_line    0x00000000000168ed      0x7bb build_soccer_game/app_eeprom.o
- .debug_line    0x00000000000170a8      0x4cd build_soccer_game/app_non_clear_ram.o
- .debug_line    0x0000000000017575      0x692 build_soccer_game/app_bsp.o
- .debug_line    0x0000000000017c07      0x6bb build_soccer_game/app_modbus_pull.o
- .debug_line    0x00000000000182c2     0x154e build_soccer_game/shell.o
- .debug_line    0x0000000000019810      0x648 build_soccer_game/task_shell.o
- .debug_line    0x0000000000019e58      0x568 build_soccer_game/task_life.o
- .debug_line    0x000000000001a3c0      0xb1f build_soccer_game/task_fw.o
- .debug_line    0x000000000001aedf      0x4ee build_soccer_game/task_list.o
- .debug_line    0x000000000001b3cd      0x54f build_soccer_game/task_display.o
- .debug_line    0x000000000001b91c      0x5ce build_soccer_game/task_if.o
- .debug_line    0x000000000001beea      0x498 build_soccer_game/task_rf24_if.o
- .debug_line    0x000000000001c382      0x5ee build_soccer_game/task_uart_if.o
- .debug_line    0x000000000001c970      0x492 build_soccer_game/task_dbg.o
- .debug_line    0x000000000001ce02      0x7e7 build_soccer_game/view_render.o
- .debug_line    0x000000000001d5e9      0x6a6 build_soccer_game/screen_manager.o
- .debug_line    0x000000000001dc8f     0x14a1 build_soccer_game/Adafruit_GFX.o
- .debug_line    0x000000000001f130      0xb80 build_soccer_game/Adafruit_oled_drv.o
- .debug_line    0x000000000001fcb0      0x4c9 build_soccer_game/eeprom.o
- .debug_line    0x0000000000020179      0x5b9 build_soccer_game/link_hal.o
- .debug_line    0x0000000000020732      0x9b3 build_soccer_game/link.o
- .debug_line    0x00000000000210e5      0xbef build_soccer_game/link_mac.o
- .debug_line    0x0000000000021cd4      0xd3f build_soccer_game/link_phy.o
- .debug_line    0x0000000000022a13      0x809 build_soccer_game/link_data.o
- .debug_line    0x000000000002321c      0x6b7 build_soccer_game/wiring_digital.o
- .debug_line    0x00000000000238d3      0xaad build_soccer_game/Print.o
- .debug_line    0x0000000000024380      0x565 build_soccer_game/WMath.o
- .debug_line    0x00000000000248e5      0x6dc build_soccer_game/HardwareSerial.o
- .debug_line    0x0000000000024fc1      0x68e build_soccer_game/HardwareSerial2.o
- .debug_line    0x000000000002564f      0x7b1 build_soccer_game/SPI.o
- .debug_line    0x0000000000025e00      0xabc build_soccer_game/Wire.o
- .debug_line    0x00000000000268bc      0x8d0 build_soccer_game/twi.o
- .debug_line    0x000000000002718c      0x68e build_soccer_game/mini_cpp.o
- .debug_line    0x000000000002781a      0x498 build_soccer_game/ar_striker.o
- .debug_line    0x0000000000027cb2      0x492 build_soccer_game/ar_keeper.o
- .debug_line    0x0000000000028144      0x619 build_soccer_game/ar_ball.o
- .debug_line    0x000000000002875d     0x11fd build_soccer_game/scr_soccer.o
- .debug_line    0x000000000002995a      0x5ad build_soccer_game/task_soccer_game.o
+ .debug_line    0x000000000001317e      0x722 build_soccer_game/scr_startup.o
+ .debug_line    0x00000000000138a0      0x821 build_soccer_game/scr_menu.o
+ .debug_line    0x00000000000140c1      0x501 build_soccer_game/screens_bitmap.o
+ .debug_line    0x00000000000145c2      0x724 build_soccer_game/scr_score.o
+ .debug_line    0x0000000000014ce6      0x53d build_soccer_game/task_system.o
+ .debug_line    0x0000000000015223     0x12cc build_soccer_game/app.o
+ .debug_line    0x00000000000164ef      0x3e8 build_soccer_game/app_data.o
+ .debug_line    0x00000000000168d7      0x7bb build_soccer_game/app_eeprom.o
+ .debug_line    0x0000000000017092      0x4cd build_soccer_game/app_non_clear_ram.o
+ .debug_line    0x000000000001755f      0x680 build_soccer_game/app_bsp.o
+ .debug_line    0x0000000000017bdf      0x6bb build_soccer_game/app_modbus_pull.o
+ .debug_line    0x000000000001829a     0x154e build_soccer_game/shell.o
+ .debug_line    0x00000000000197e8      0x648 build_soccer_game/task_shell.o
+ .debug_line    0x0000000000019e30      0x568 build_soccer_game/task_life.o
+ .debug_line    0x000000000001a398      0xb1f build_soccer_game/task_fw.o
+ .debug_line    0x000000000001aeb7      0x4ee build_soccer_game/task_list.o
+ .debug_line    0x000000000001b3a5      0x54f build_soccer_game/task_display.o
+ .debug_line    0x000000000001b8f4      0x5ce build_soccer_game/task_if.o
+ .debug_line    0x000000000001bec2      0x498 build_soccer_game/task_rf24_if.o
+ .debug_line    0x000000000001c35a      0x5ee build_soccer_game/task_uart_if.o
+ .debug_line    0x000000000001c948      0x492 build_soccer_game/task_dbg.o
+ .debug_line    0x000000000001cdda      0x7e7 build_soccer_game/view_render.o
+ .debug_line    0x000000000001d5c1      0x6a6 build_soccer_game/screen_manager.o
+ .debug_line    0x000000000001dc67     0x14a1 build_soccer_game/Adafruit_GFX.o
+ .debug_line    0x000000000001f108      0xb80 build_soccer_game/Adafruit_oled_drv.o
+ .debug_line    0x000000000001fc88      0x4c9 build_soccer_game/eeprom.o
+ .debug_line    0x0000000000020151      0x5b9 build_soccer_game/link_hal.o
+ .debug_line    0x000000000002070a      0x9b3 build_soccer_game/link.o
+ .debug_line    0x00000000000210bd      0xbef build_soccer_game/link_mac.o
+ .debug_line    0x0000000000021cac      0xd3f build_soccer_game/link_phy.o
+ .debug_line    0x00000000000229eb      0x809 build_soccer_game/link_data.o
+ .debug_line    0x00000000000231f4      0x6b7 build_soccer_game/wiring_digital.o
+ .debug_line    0x00000000000238ab      0xaad build_soccer_game/Print.o
+ .debug_line    0x0000000000024358      0x565 build_soccer_game/WMath.o
+ .debug_line    0x00000000000248bd      0x6dc build_soccer_game/HardwareSerial.o
+ .debug_line    0x0000000000024f99      0x68e build_soccer_game/HardwareSerial2.o
+ .debug_line    0x0000000000025627      0x7b1 build_soccer_game/SPI.o
+ .debug_line    0x0000000000025dd8      0xabc build_soccer_game/Wire.o
+ .debug_line    0x0000000000026894      0x8d0 build_soccer_game/twi.o
+ .debug_line    0x0000000000027164      0x68e build_soccer_game/mini_cpp.o
+ .debug_line    0x00000000000277f2      0x498 build_soccer_game/ar_striker.o
+ .debug_line    0x0000000000027c8a      0x492 build_soccer_game/ar_keeper.o
+ .debug_line    0x000000000002811c      0x619 build_soccer_game/ar_ball.o
+ .debug_line    0x0000000000028735     0x11f7 build_soccer_game/scr_soccer.o
+ .debug_line    0x000000000002992c      0x5ad build_soccer_game/task_soccer_game.o
 
 .debug_str      0x0000000000000000    0x14f4a
  .debug_str     0x0000000000000000      0x1bf build_soccer_game/fsm.o
