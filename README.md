@@ -226,9 +226,6 @@ Debugging tips
 - Use `stm32l_init.gdb` files in `application/` and `boot/` to set breakpoints and initialize the debug session.
 - Add serial or GPIO-based logging where practical. Keep logs minimal to avoid timing perturbations.
 
----
-
-_If you'd like, I can also add a short hardware README under `hardware/` with a BOM, annotated photos, and a simple wiring diagram._
 
 ### Code samples (C)
 
@@ -314,8 +311,6 @@ void log_event(const char *fmt, ...) {
 }
 ```
 
-These examples are intentionally concise — if you'd like, I can add matching header files under `application/sources/` (e.g., `board.h`, `display.h`, `input.h`) with minimal implementations you can adapt to your board.
-
 ## Security
 
 See `SECURITY.md` for security policy, responsible disclosure, and guidelines.
@@ -327,7 +322,3 @@ This project includes a `LICENSE` file at the repository root. Review it to conf
 ## Contact
 
 For questions or issues, open an issue in this repository or contact the maintainer via the project issue tracker.
-
----
-
-_Generated on May 21, 2026 — README expanded with structured instructions and references._
