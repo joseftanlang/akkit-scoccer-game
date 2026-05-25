@@ -3,6 +3,10 @@
 #include "scr_soccer.h"
 #include "screen_manager.h"
 
+#include "soccer_game_ball.h"
+#include "soccer_game_keeper.h"
+#include "soccer_game_striker.h"
+
 enum menu_item_t
 {
 	MENU_ITEM_SOCCER = 0,

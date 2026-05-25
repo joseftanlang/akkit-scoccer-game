@@ -152,4 +152,9 @@ build_soccer_game/scr_menu.o: sources/app/screens/scr_menu.cpp \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/bits/iterator_concepts.h \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/concepts \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/bits/range_cmp.h \
- /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/bits/vector.tcc
+ /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/bits/vector.tcc \
+ sources/app/soccer_game/soccer_game_ball.h \
+ sources/app/soccer_game/../screens/scr_soccer.h \
+ sources/app/soccer_game/soccer_game_keeper.h \
+ sources/app/screens/scr_soccer.h \
+ sources/app/soccer_game/soccer_game_striker.h

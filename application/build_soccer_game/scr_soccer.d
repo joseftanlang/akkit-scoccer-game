@@ -153,7 +153,8 @@ build_soccer_game/scr_soccer.o: sources/app/screens/scr_soccer.cpp \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/bits/range_cmp.h \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/bits/vector.tcc \
  sources/app/screens/scr_menu.h sources/app/task_life.h \
- sources/app/soccer_game/ar_ball.h \
+ sources/app/soccer_game/soccer_game_ball.h \
  sources/app/soccer_game/../screens/scr_soccer.h \
- sources/app/soccer_game/ar_keeper.h sources/app/soccer_game/scr_soccer.h \
- sources/app/soccer_game/ar_striker.h
+ sources/app/soccer_game/soccer_game_keeper.h \
+ sources/app/screens/scr_soccer.h \
+ sources/app/soccer_game/soccer_game_striker.h

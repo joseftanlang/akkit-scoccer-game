@@ -1,9 +1,9 @@
 #include "scr_soccer.h"
 #include "scr_menu.h"
 #include "task_life.h"
-#include "ar_ball.h"
-#include "ar_keeper.h"
-#include "ar_striker.h"
+#include "soccer_game_ball.h"
+#include "soccer_game_keeper.h"
+#include "soccer_game_striker.h"
 #include "screen_manager.h"
 
 /* Shared game state is declared in header; define it here for the module */

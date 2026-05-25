@@ -1,4 +1,4 @@
-#include "ar_striker.h"
+#include "soccer_game_striker.h"
 
 /* Striker logic for shooter role
    Handles shooter position management and ball shooting mechanics */

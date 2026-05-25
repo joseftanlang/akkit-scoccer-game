@@ -1,6 +1,7 @@
-build_soccer_game/ar_goalPost.o: sources/app/soccer_game/ar_goalPost.cpp \
- sources/app/soccer_game/ar_goalPost.h \
- sources/app/soccer_game/scr_soccer.h sources/ak/inc/fsm.h \
+build_soccer_game/soccer_game_ball.o: \
+ sources/app/soccer_game/soccer_game_ball.cpp \
+ sources/app/soccer_game/soccer_game_ball.h \
+ sources/app/soccer_game/../screens/scr_soccer.h sources/ak/inc/fsm.h \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
@@ -111,7 +112,8 @@ build_soccer_game/ar_goalPost.o: sources/app/soccer_game/ar_goalPost.cpp \
  sources/platform/stm32l/arduino/cores/stm32/pgmspace.h \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/inttypes.h \
  sources/common/view_render.h sources/driver/eeprom/eeprom.h \
- sources/app/app_eeprom.h sources/app/screens/screens_bitmap.h \
+ sources/app/app_eeprom.h \
+ sources/app/soccer_game/../screens/screens_bitmap.h \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/vector \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/bits/stl_algobase.h \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/bits/functexcept.h \

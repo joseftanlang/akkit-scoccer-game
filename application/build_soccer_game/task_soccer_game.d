@@ -33,7 +33,7 @@ build_soccer_game/task_soccer_game.o: \
  /home/josef/Downloads/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/bits/std_abs.h \
  sources/ak/inc/port.h sources/platform/stm32l/platform.h \
  sources/ak/inc/task.h sources/common/container/log_queue.h \
- sources/app/soccer_game/scr_soccer.h sources/ak/inc/fsm.h \
+ sources/app/screens/scr_soccer.h sources/ak/inc/fsm.h \
  sources/ak/inc/port.h sources/ak/inc/message.h sources/ak/inc/timer.h \
  sources/ak/inc/timer.h sources/driver/led/led.h sources/sys/sys_ctrl.h \
  sources/app/app_data.h sources/sys/sys_boot.h sources/sys/sys_dbg.h \

@@ -3,8 +3,6 @@
 
 static void task_soccer_game_dispatch(ak_msg_t* msg)
 {
-	/* Forward task messages to the main soccer screen handler so
-	   the canonical implementation handles game state and rendering. */
 	scr_soccer_handle(msg);
 }
 
